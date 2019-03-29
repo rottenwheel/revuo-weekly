@@ -1,0 +1,224 @@
+p.note {
+    font-size: 0.7em;
+    margin-bottom: 1rem;
+    margin-top: -1rem;
+}
+
+.bcstats {
+    background-color: #f0f0f0;
+    margin-bottom: 1.3334rem;
+    border-radius: 2px;
+}
+
+.bcstats p {
+    padding: 1em;
+    margin: 0;
+}
+
+.bcstats p:nth-child(even) {
+    background-color: #f6f6f6;
+}
+
+$breakpoint-alpha: 480px; // adjust to your needs
+
+p.table-title {
+    margin: 0;
+    padding-bottom: 0.5em;
+    font-weight: 700;
+    font-size: 16px;
+    padding-top: 0.5em;
+}
+
+.price-table {
+  margin: 0 0 1.3334rem 0;
+  width: 100%; // adjust to your needs
+  background: #45494f;
+  color: #efefef;
+  border-radius: 2px;
+  overflow: hidden;
+  border-spacing: 0;
+  @media (min-width: $breakpoint-alpha) {
+    background: #f0f0f0;
+    color: #45494f;
+    tr.row3 {
+      background-color: #f6f6f6;
+  }
+  }
+  
+  tr {
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+  }
+  
+  
+    
+  tr.row1 {
+    background-color: #45494f;
+  }
+  
+  th {
+    display: none;   
+  }
+  
+  td {
+    display: block; 
+    
+    &:first-child {
+      padding-top: .5em;
+    }
+    &:last-child {
+      padding-bottom: .5em;
+    }
+
+    &:before {
+      content: attr(data-th)": "; // who knew you could do this? The internet, that's who.
+      font-weight: bold;
+
+      // optional stuff to make it look nicer
+      width: 6.5em; // magic number :( adjust according to your own content
+      display: inline-block;
+      // end options
+      
+      @media (min-width: $breakpoint-alpha) {
+        display: none;
+      }
+    }
+  }
+  
+  th, td {
+    text-align: left;
+    margin: .5em 1em;
+    @media (min-width: $breakpoint-alpha) {
+      display: table-cell;
+      padding: .25em .5em;
+      padding: 1em !important; 
+      &:first-child {
+        padding-left: 0;
+      }
+      
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+
+  }
+    
+  th, td:before {
+    color: #fff;
+  }
+    
+  td.green {
+    color: #66d166; 
+    @media (min-width: $breakpoint-alpha) {
+        color: #51a751;
+    }
+  }
+    
+  td.red {
+    color: #e36f6e; 
+    @media (min-width: $breakpoint-alpha) {
+        color: #d83231;
+    }
+  }
+    
+}
+
+.content h3 {
+    margin-top: 3rem;
+    background-color: #45494f;
+    color: white;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.content ul {
+    line-height: 1.9;
+}
+
+.newsbyte, .event {
+    padding: 1rem;
+    background-color: #f0f0f0;
+    margin-top: 1rem;
+}
+
+.newsbyte:first-of-type, .event:first-of-type {
+    margin-top: 0;
+}
+
+.newsbyte:after {
+    display: none;
+    content: '';
+    width: 100%;
+    height: 1px;
+    margin-top: 2rem;
+    background-color: #d5d5d5;
+}
+
+.newsbyte h4, h4.stat {
+    font-size: 18px;
+    font-family: 'PT Serif', serif;
+    font-weight: 700;
+    @media (max-width: 480px) {
+        font-size: 16px;
+    }
+}
+
+.newsbyte p {
+    margin-bottom: 0;
+}
+
+p.date {
+    margin-bottom: 0.2em;
+    font-weight: 700;
+}
+
+.proposal {
+    margin-bottom: 1rem;
+    padding: 1em;
+    background-color: #f0f0f0;
+}
+
+.proposal p {
+    margin-bottom: 0;
+}
+
+.proposal p:first-child {
+    padding-bottom: 0.5rem;
+}
+
+.proposal p a {
+    line-height: 1.7;
+}
+
+img.merchant-img {
+    width: 15rem;
+    margin: 0 0 24px 0;
+}
+
+p.address {
+    background-color: #f0f0f0;
+    color: #45494f;
+    font-weight: bold;
+    word-wrap: break-word;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    border-radius: 2px;
+    -webkit-touch-callout: all;
+    -webkit-user-select: all;
+    -khtml-user-select: all;
+    -moz-user-select: all;
+    -ms-user-select: all;
+    user-select: all;
+}
+
+a.qr {
+    display: inline-block;
+    border: none;
+    border-radius: 10px;
+}
+
+a.qr img {
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+
