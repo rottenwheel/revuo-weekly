@@ -243,6 +243,8 @@ Cypher Market is a business with a social vision, to experiment with new, sustai
 
 Check back next week for another merchant that accepts Monero for their goods and services.
 
+*Disclaimer: Cypher Market is owned by the author of the Revuo.*
+
 <h3 id="volunteer">Volunteer Opportunities</h3>
 
 <p>If you want to get involved in making Monero better, but aren’t sure how, check out the volunteer opportunities below.</p>
