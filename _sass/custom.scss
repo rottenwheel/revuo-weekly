@@ -29,7 +29,7 @@ p.table-title {
     padding-top: 0.5em;
 }
 
-.price-table {
+.price-table, .moneroversary-table {
   margin: 0 0 1.3334rem 0;
   width: 100%; // adjust to your needs
   background: #45494f;
@@ -121,6 +121,22 @@ p.table-title {
     }
   }
     
+}
+
+.moneroversary-table {
+    @media (max-width: $breakpoint-alpha) {
+    background: #f0f0f0;
+    color: #45494f;
+    }
+    th, td:before {
+        @media (max-width: $breakpoint-alpha) {
+        color: #45494f;
+        }
+    }
+}
+
+.moneroversary-table tr.row1 {
+    background-color: #db8b55;
 }
 
 .content h3 {
@@ -220,5 +236,15 @@ a.qr {
 a.qr img {
     margin-bottom: 0;
     vertical-align: middle;
+}
+
+img.merchant-img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img#njalla {
+    background-color: #01051F;
+    padding: 1rem;
 }
 
