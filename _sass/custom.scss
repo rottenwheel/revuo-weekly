@@ -262,3 +262,10 @@ img#njalla {
     padding: 1rem;
 }
 
+p.text-lead {
+    margin-bottom: 0;
+}
+
+#post-page img.img-lead, #post-page p.text-lead {
+    display: none;
+}
