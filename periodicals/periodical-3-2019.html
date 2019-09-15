@@ -15,7 +15,7 @@ image: /img/twitter-card-periodical-3.png
     <li><a href="#development">Development Update</a></li>
     <li><a href="#mrl">Monero Research Lab Update</a></li>
     <li><a href="#community">Community Update</a></li>
-    <li><a href="#translations">Monero Translations Update</a></li>
+    <li><a href="#translations">Monero Localization Update</a></li>
     <li><a href="#mobile">Third-Party Mobile Update</a></li>
     <li><a href="#thanks">Special Thanks</a></li>
     <li><a href="#pdf">Download PDF</a></li>
@@ -28,7 +28,7 @@ image: /img/twitter-card-periodical-3.png
 
 <h3 id="development">Development Update</h3>
 
-<p>Under the hood, Monero is a powerhouse of technology and code. Work on the code base is very versatile: it concerns maintaining the current code, fixing bugs, implementing new innovations, etc. It is easy to get lost in all the developments of the past six months, but we’ll take a look at a few major development highlights, and what we may expect for the upcoming October protocol upgrade.</p>
+<p>Under the hood, Monero is a powerhouse of technology and code. Work on the code base is very versatile: it concerns maintaining the current code, fixing bugs, implementing innovations, etc. It is easy to get lost in all the developments of the past six months, but we’ll take a look at a few major development highlights, and what we may expect for the upcoming October protocol upgrade.</p>
 
 <table class="hted-head">
   <tbody><tr class="row1">
@@ -36,9 +36,7 @@ image: /img/twitter-card-periodical-3.png
   </tr>
 </tbody></table>
 
-<p>On March 9, 2019, Monero had its scheduled upgrade on block 1788000. The scheduled network upgrade introduced four major changes. First, the dynamic block size algorithm was adjusted to better accommodate short-term spending sprees while keeping long-term growth sensible. Second, a PoW tweak (CryptoNight-R) curbed the ASICs previously present on the network.</p> 
-    
-<p>Third, an encrypted payment ID was added to each transaction to improve transaction homogeneity. Fourth, the development team simplified amount commitments by shrinking the size of amount encodings and using deterministic masks. These changes made transactions smaller and were deemed safe to apply by the Monero Research Lab. Since the update, several major focus areas have received attention.</p>
+<p>On March 9, 2019, Monero had its scheduled upgrade on block 1788000. The scheduled network upgrade introduced four major changes. First, the dynamic block size algorithm was adjusted to better accommodate short-term spending sprees while keeping long-term growth sensible. Second, a PoW tweak (CryptoNight-R) curbed the ASICs previously present on the network. Third, an encrypted payment ID was added to each transaction to improve transaction homogeneity. Fourth, the development team simplified amount commitments by shrinking the size of amount encodings and using deterministic masks. These changes made transactions smaller and were deemed safe to apply by the Monero Research Lab. Since the update, several major focus areas have received attention.</p>
 
 <h5>RandomX</h5>
 
@@ -65,7 +63,7 @@ image: /img/twitter-card-periodical-3.png
 <p>Not only has the protocol changed, but a lot of work has been done on the Graphical User Interface (GUI) worked on by volunteers and stewarded by the Core Team. We summarize the major developments below, but there is an ongoing effort to make the Monero software as user-friendly as possible.
 </p>
 
-<p>The starting screens/startup wizards were  rebuilt from scratch, with the most notable change being the inclusion of simple mode. This new startup option was created to get new users up and going as quickly as possible by utilizing a simplified UI and connecting to a remote node by default The GUI also saw new screens, such as a merchant page, which allows the GUI to be used as a point-of-sale system, as well as support for multiple accounts (made possible by subaddresses).</p>
+<p>The starting screens/startup wizards were  rebuilt from scratch, with the most notable change being the inclusion of simple mode. This new startup option was created to get new users up and going as quickly as possible by utilizing a simplified UI and connecting to a remote node by default. The GUI also saw new screens, such as a merchant page, which allows the GUI to be used as a point-of-sale system, as well as support for multiple accounts (made possible by subaddresses).</p>
 
 <p>Another major success was the added ability for users to utilize the GUI with their Trezor hardware wallets. The last major inclusion is the new white theme designed by knufflebund. Users are given the option of whether to use the standard black theme, or toggle it to a brighter alternative.</p>
 
@@ -76,29 +74,17 @@ image: /img/twitter-card-periodical-3.png
 <p>Keeping up with advances in the space, original research, testing implementations of improvements, providing privacy recommendations, and being the front line of defense against attacks are all part of the seemingly simple job that the Monero Research Lab is tasked with: making sure Monero remains at the forefront of privacy and blockchain technologies. In this section, we take a look at what the beginning of 2019 brings us - this section is led by Mitchell P. Krawiec-Thayer.</p>
 
 
-<table class="hted-head">
-  <tbody><tr class="row1">
-    <th>Conferences and Payment IDs</th>
-  </tr>
-</tbody></table>
+<h5>Conferences and Payment IDs</h5>
 
 <p>Back in January 2019, Monero Research Lab and several developers attended the Stanford Blockchain Conference. This conference explores the use of formal methods, empirical analysis, and risk modeling to better understand security and systemic risk in blockchain protocols. The same month they’ve discovered patterns in Monero nonces, due to varying search strategies employed by different miners.</p>
 
 <p>A lot of discussion took place around deprecating or eliminating Payment IDs, due to privacy impacts and confusing UX. After much discussion, wallets hid this feature for the April update, and most wallets will completely remove the feature in the October update. Exchanges, payment processors, and other services should upgrade to support Monero subaddresses as soon as possible, which offer greater privacy and a better user experience.</p>
 
-<table class="hted-head">
-  <tbody><tr class="row1">
-    <th>All the algorithms</th>
-  </tr>
-</tbody></table>
+<h5>All the algorithms</h5>
 
 <p>In March, the developers team had a special <a href="https://repo.getmonero.org/monero-project/monero-site/blob/b87354501b6343f9146f331805ddadc45696f728/_posts/2019-03-24-logs-for-the-dev-meeting-held-on-2019-03-24.md" target="_blank">2.5 hour developer meeting</a> to discuss proof of work algorithms. The same month, a Boron Butterfly Upgrade was made ahead of schedule (v0.14) to address <a href="https://www.reddit.com/r/Monero/comments/aj21yt/big_bang_attack_on_xmr/" target="_blank">dynamic blocksize algorithm</a> and the <a href="https://www.reddit.com/r/Monero/comments/agysnf/hashrate_discussion_thread/" target="_blank">suspected presence of ASICs</a> on the network. The PoW algorithm was tweaked to the <a href="https://github.com/monero-project/monero/pull/5126" target="_blank">CryptoNightR</a> variant with ASIC-incompatible random integer math. This caused a significant decrease in the <a href="https://www.coinwarz.com/network-hashrate-charts/monero-network-hashrate-chart" target="_blank">total hashrate</a> from approximately 1 GH/s to 200 MH/s. Developers also switched decoy selection algorithm to use the “output lineup” method.</p>
 
-<table class="hted-head">
-  <tbody><tr class="row1">
-    <th>Ring Signature Optimizations and Replacement Candidates</th>
-  </tr>
-</tbody></table>
+<h5>Ring Signature Optimizations and Replacement Candidates</h5>
 
 <p>A lot of work has been performed by the Research Lab team in researching several new ring signature alternatives. These schemes include the likes of: <a href="https://eprint.iacr.org/2019/550" target="_blank">Spartan</a>, <a href="https://eprint.iacr.org/2019/508" target="_blank">RingCT3.0</a>, and <a href="https://lelantus.io/lelantus.pdf" target="_blank">Lelantus</a>. They have shared an analysis of Lelantus, including prototype code for Monero-to-Lelantus output migration, and plan on reviewing <a href="https://eprint.iacr.org/2019/580.pdf" target="_blank">Omniring</a> next, which would massively improve Monero’s privacy.</p>
 <p>In addition to these reviews from external sources, MRL has been working up schemes of their own, which include the likes of <a href="https://eprint.iacr.org/2019/595" target="_blank">DLSAG</a> and CLSAG. DLSAG would enable non-interactive refund transactions for interoperable payment channels which would, in turn, enable second-layer solutions on Monero such as Lightning Network and atomic swaps. CLSAG (compact linkable spontaneous anonymous group) is a similar ring signature scheme to what is presently used, but is ~25% smaller and ~20% faster to verify transactions, all as a low-impact change.</p>
@@ -113,9 +99,9 @@ image: /img/twitter-card-periodical-3.png
   </tr>
 </tbody></table>
 
-<p> Justin 'sgp' Ehrenhofer and Diego ‘rehrar’ Salazar hold the Monero Coffee Chat every four weeks. Here, the community contributors join a livestreamed conversation to discuss the development, community projects, and events which have happened since the last Coffee Chat. They are available for viewing on the Monero Community Workgroup Youtube channel, and they are excellent resources for getting a summary of the month’s activities and discussions.</p>
+<p> Justin 'sgp' Ehrenhofer and Diego ‘rehrar’ Salazar hold the Monero Coffee Chat every four weeks. Here, the community contributors join a livestreamed conversation to discuss the development, community projects, and events which have happened since the last Coffee Chat. They are available for viewing on the <a href="https://www.youtube.com/channel/UCKxLNPJeEjPXOke55i5AIXA" target="_blank">Monero Community Workgroup Youtube channel</a>, and they are excellent resources for getting a summary of the month’s activities and discussions.</p>
 
-<p>In December, a video program “Breaking Monero” was introduced. It helps newbies to understand how the weaknesses and flaws of Monero. While this might seem like a strange goal on the surface, it’s important to remember that only by highlighting and discussing these flaws can we hope to overcome them, both technologically and as a community. So far, the topics covered include: a ring signatures introduction, 0-decoy and chain reactions, chain splits (key image reuse attack), input selection algorithm, unusual ringsize, remote nodes, timing attacks, poisoned outputs (EAE attack), public mining pools, input/output metadata, and blockchain explorer opsec. These are also available for viewing on the Monero Community Workgroup YouTube channel. Moreover, there is other good news: <a href="https://www.monerooutreach.org/breaking-monero/" target="_blank">Breaking Monero series is fully transcripted by the Outreach workgroup</a>.</p>
+<p>In December, a video program “Breaking Monero” was introduced. It helps newbies to understand the weaknesses and flaws of Monero. While this might seem like a strange goal on the surface, it’s important to remember that only by highlighting and discussing these flaws can we hope to overcome them, both technologically and as a community. So far, the topics covered include: a ring signatures introduction, 0-decoy and chain reactions, chain splits (key image reuse attack), input selection algorithm, unusual ringsize, remote nodes, timing attacks, poisoned outputs (EAE attack), public mining pools, input/output metadata, and blockchain explorer opsec. These are also available for viewing on the Monero Community Workgroup YouTube channel. Moreover, there is other good news: <a href="https://www.monerooutreach.org/breaking-monero/" target="_blank">Breaking Monero series is fully transcripted by the Outreach workgroup</a>.</p>
 
 <table class="hted-head">
   <tbody><tr class="row1">
@@ -144,13 +130,13 @@ image: /img/twitter-card-periodical-3.png
 <h5>Wallets</h5>
 
 <ul>
-    <li>Exodus Desktop has started to support  XRM! The Monero coin has been added to Exodus Eden version 19.2.2.</li>
+    <li>Exodus Desktop has started to support  XMR! The Monero coin has been added to Exodus Eden version 19.2.2.</li>
     <li>Exa Wallet released a multisig-focused mobile wallet for both Android and iOS. Stagenet and Mainnet are supported.</li>
     <li>Trust Wallet has added Monero.</li>
     <li>Coinomi added Monero as well.</li>
     <li>ZelCore (Multi-Asset Wallet)- now supports XRM.</li>
     <li>WooKey wallet - a new monero wallet, fully open source, for iOS and Android, which is available now.</li>
-    <li>Guarda Wallet now supports XRM.</li>
+    <li>Guarda Wallet now supports XMR.</li>
 </ul>
 
 <h5>Exchanges</h5>
@@ -188,7 +174,7 @@ image: /img/twitter-card-periodical-3.png
 
 <p>The electronic version of <a href="https://masteringmonero.com/" target="_blank">Mastering Monero</a> was released, and freely accessible to all (although a donation is recommended). It is a comprehensive guide on the world of Monero, progressing from a beginner’s introduction all the way to the privacy tech, and details of development.</p>
 
-<p>The beloved Forum Funding System has finally retired (may the spam rest in peace), and has been replaced by the Community Crowdfunding System (CCS), which can be viewed at <a href="https://ccs.getmonero.org" target="_blank">ccs.getmonero.org</a> Feel free to join, comment, discuss, and donate to proposals.</p>
+<p>The beloved Forum Funding System has finally retired (may the spam rest in peace), and has been replaced by the Community Crowdfunding System (CCS), which can be viewed at <a href="https://ccs.getmonero.org" target="_blank">ccs.getmonero.org</a>. Feel free to join, comment, discuss, and donate to proposals.</p>
 
 <h3 id="translations">Monero Localization Update</h3>
 
@@ -198,7 +184,7 @@ image: /img/twitter-card-periodical-3.png
 
 <h3 id="mobile">Third-Party Mobile Update</h3>
 
-<p>The Monero ecosystem has several third party wallets, and it would be a heavy task for the Revuo to report on all of them. That said, there are a few mobile wallets that have etched their way into the hearts and minds of the community, in large part due to their initiative and significant continued investment in Monero’s ecosystem. We will focus on Monerujo, Cake Wallet, and MyMonero in this issue.</p>
+<p>The Monero ecosystem has several third-party wallets, and it would be a heavy task for the Revuo to report on all of them. That said, there are a few mobile wallets that have etched their way into the hearts and minds of the community, in large part due to their initiative and significant continued investment in Monero’s ecosystem. We will focus on Monerujo, Cake Wallet, and MyMonero in this issue.</p>
 
 <table class="hted-head">
   <tbody><tr class="row1">
@@ -239,7 +225,7 @@ image: /img/twitter-card-periodical-3.png
 
 <h3 id="thanks">Special Thanks</h3>
 
-<p>The Revuo Monero would like to thank <a href="https://www.youtube.com/channel/UC7Udxx7orb0ktcdyaWcf-sA" target="_blank">Maria Vovchok</a> for her work in tracking down, assembling, and writing the first draft of the issue, and Justin "sgp" Ehrenhofer for his review and comments.</p>
+<p>The Revuo Monero would like to thank Maria Vovchok for her work in tracking down, assembling, and writing the first draft of the issue, and Justin "sgp" Ehrenhofer for his review and comments.</p>
 
 <h3 id="pdf">Download PDF</h3>
 
