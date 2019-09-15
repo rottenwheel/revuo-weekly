@@ -18,7 +18,7 @@ body {
 /*- Typography for medium and small screen, based on 16px font-size -*/
 
 p, ul, ol {
-	font-size: 1em; /* 16px */
+	font-size: 18px;
 	line-height: 1.7em; /* 24px/16px */
 	margin-bottom: 1.5em; /* 24px/16px */
 }
@@ -40,11 +40,27 @@ h2 {
     }
 }
 
-h3, h4, h5, h6 {
+h3 {
+    font-size: 1.3em; /* 18px/16px */
+    line-height: 1.7em; /* 24px/18px */
+	padding: 0.66667em 0; /* 12px/18px * 2 (Use padding instead of margin to maintain proximity with paragraph) */
+    font-family: 'PT Sans', sans-serif;
+}
+
+.hted-head th {
+    font-size: 1.1em;
+}
+
+h4, h5, h6 {
 	font-size: 1.125em; /* 18px/16px */
 	line-height: 1.7em; /* 24px/18px */
 	padding: 0.66667em 0; /* 12px/18px * 2 (Use padding instead of margin to maintain proximity with paragraph) */
     font-family: 'PT Sans', sans-serif;
+}
+
+h5 {
+    padding-bottom: 0.3em;
+    font-size: 1.3em;
 }
 
 blockquote {
@@ -59,6 +75,24 @@ blockquote {
 	p, ul, ol {
 		padding: 1.5em 0; /* 24px/18px */
 	}
+}
+
+@media (min-width: 520px) { //Breakpoint set to 940px
+    
+p, ul, ol {
+	font-size: 20px;
+	line-height: 1.7em; /* 24px/16px */
+	margin-bottom: 1.5em; /* 24px/16px */
+}
+    
+h3, h5 {
+    font-size: 1.5em;    
+}
+    
+.hted-head th {
+    font-size: 1.2em;
+}
+    
 }
 
 /*- Typography for big screen, based on 18px font-size -*/
@@ -87,6 +121,11 @@ h3, h4, h5, h6 {
 	font-size: 1.7em; /* 24px/18px */
 	line-height: 1.7em; /* 24px/24px */
 	padding: 0.5em 0; /* 12px/24px * 2 (Use padding instead of margin to maintain proximity with paragraph) */
+}
+    
+h5 {
+    padding-bottom: 0;
+    font-size: 1.5em;
 }
 
 blockquote {

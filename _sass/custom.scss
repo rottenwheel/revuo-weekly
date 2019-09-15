@@ -287,3 +287,35 @@ p.text-lead {
 img.gratuitas {
     width: 10rem;
 }
+
+// Periodical 
+
+.revuo-classes a {
+    padding: 1rem 2rem;
+    width: 11rem;
+}
+
+#weekly .revuo-classes a.wk {
+    background-color: #f0f0f0;
+}
+
+#periodical .revuo-classes a.pd, #wrap.periodical .revuo-classes a.pd:active, #wrap.periodical .revuo-classes a.pd:focus {
+    background-color: #f0f0f0;
+}
+
+// Typography for Periodical
+
+.hted-head {
+    margin: 2.5rem 0 1.3334rem 0;
+    background: #9a3c7d;
+    background: #925495;
+    color: #fefefe;
+    width: 100%;
+    border-radius: 2px;
+    padding: 1em;
+    text-align: left;
+}
+
+#post-page h2 {
+    line-height: 1.3;
+}
