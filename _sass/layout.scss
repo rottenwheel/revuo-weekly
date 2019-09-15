@@ -127,6 +127,7 @@ html, body {
 	text-align: center;
   padding: 24px 0;
   position: relative;
+  margin-bottom: 23px;
   @media (max-width: 480px) {
       padding-top: 10px;
   }
@@ -166,7 +167,7 @@ html, body {
     }
   }
   &:after {
-  	display: block;
+  	display: none;
     content: '';
     width: 5rem;
     height: 1px;
@@ -211,6 +212,21 @@ html, body {
   color: lighten($text-color, 25%);
   line-height: 1.5em; /* 24px/16px */
   margin-bottom: 1.5em; /* 24px/16px */
+  padding-top: 0.5em;
+  font-weight: 200;
+  @media (min-width: 940px) {
+    display: block;
+    color: lighten($text-color, 25%);
+    line-height: 1.3334em; /* 24px/18px */
+    margin-bottom: 1.3334em; /* 24px/18px */
+    font-weight: 200;
+  }
+}
+
+.by-line-post {
+  display: block;
+  color: lighten($text-color, 25%);
+  line-height: 1.5em; /* 24px/16px */
   padding-top: 0.5em;
   font-weight: 200;
   @media (min-width: 940px) {
