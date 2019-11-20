@@ -10,7 +10,13 @@
 	<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+    {% if page.path contains '_posts' %}
+    <link rel="canonical" href="{{ page.issuenumber | replace:'index.html','' | prepend: "https://localmonero.co/revuo/weekly/" }}" />
+    {%elsif page.periodical == "yes"%}
+    <link rel="canonical" href="{{ page.issuenumber | replace:'index.html','' | prepend: "https://localmonero.co/revuo/periodical/" }}" />
+    {%else%}
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: "https://localmonero.co/revuo" }}" />
+    {%endif%}
 
 	<!-- CSS & fonts -->
 	<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl | replace: '//', '/' }}">
