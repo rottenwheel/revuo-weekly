@@ -9,7 +9,7 @@ markdown: kramdown
 source: .
 destination: ./_site
 permalink: /:title
-paginate: 4
+paginate: 6
 paginate_path: /page:num/
 
 # Default values
