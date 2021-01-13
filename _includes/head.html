@@ -17,6 +17,7 @@
     {%else%}
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: "https://localmonero.co/revuo" }}" />
     {%endif%}
+    <meta property="og:image" content="{{ post.image }}" />
 
 	<!-- CSS & fonts -->
 	<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl | replace: '//', '/' }}">
