@@ -298,6 +298,50 @@ img.localmonero {
     margin-bottom: -1rem;
 }
 
+.sponsors {
+	box-sizing: border-box;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-flex: 0;
+	-ms-flex: 0 1 auto;
+	flex: 0 1 auto;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.sponsor {
+    box-sizing: border-box;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    flex-basis: auto;
+    @media (max-width: 520px) {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
+
+img.dvchain {
+    height: 9rem;
+    margin-left: 3rem;
+    @media (max-width: 520px) {
+        margin-left: auto;
+        margin-top: 1rem;
+        height: auto;
+        width: 13rem;
+    }
+}
+
 // Periodical 
 
 .revuo-classes a {
