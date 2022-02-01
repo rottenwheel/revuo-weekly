@@ -11,15 +11,15 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
     {% if page.path contains '_posts' %}
-    <link rel="canonical" href="{{ page.issuenumber | replace:'index.html','' | prepend: "https://localmonero.co/revuo/weekly/" }}" />
+    <link rel="canonical" href="{{ page.issuenumber | replace:'index.html','' | prepend: "https://revuo-xmr.com/" }}" />
     {%elsif page.periodical == "yes"%}
-    <link rel="canonical" href="{{ page.issuenumber | replace:'index.html','' | prepend: "https://localmonero.co/revuo/periodical/" }}" />
+    <link rel="canonical" href="{{ page.issuenumber | replace:'index.html','' | prepend: "https://revuo-xmr.com/periodicals/" }}" />
     {%else%}
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: "https://localmonero.co/revuo" }}" />
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: "https://revuo-xmr.com/" }}" />
     {%endif%}
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Revuo Monero - {{page.title}}">
-    <meta name="twitter:image" content="https://revuo-monero.com{{ page.image }}">
+    <meta name="twitter:image" content="https://revuo-xmr.com/{{ page.image }}">
 
 	<!-- CSS & fonts -->
 	<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl | replace: '//', '/' }}">
