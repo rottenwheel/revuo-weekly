@@ -17,10 +17,12 @@
     {%else%}
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: "https://revuo-xmr.com/" }}" />
     {%endif%}
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Revuo Monero - {{page.title}}">
-    <meta name="twitter:image" content="https://revuo-xmr.com//img/revuo-monero.png">
-	<meta property="og:site_name" content="Revuo Monero" />
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+	<meta name="twitter:image" content="{%if post.image %}{{ post.image }}{% else %}https://revuo-xmr.com/img/revuo-monero.png{% endif %}">
+	<meta property="og:site_name" content="{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+	<meta property="og:title" content="{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+	<meta property="og:image" content="{%if post.image %}{{ post.image }}{% else %}https://revuo-xmr.com/img/revuo-monero.png{% endif %}" />
 
 	<!-- CSS & fonts -->
 	<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl | replace: '//', '/' }}">
