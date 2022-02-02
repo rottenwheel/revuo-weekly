@@ -1,6 +1,17 @@
+---
+title: Issue 106&#58; January 30 - February 4, 2022
+image: /img/revuo-monero.png
+issuenumber: 106
+---
+[<img src="/img/img-issue106.png" alt="Revuo Monero Weekly #106 Slide" class="img-lead">]({% post_url 2022-02-04-issue-106 %}.html)
+
+<p class="text-lead">Revuo Monero Weekly: January 30 - February 4, 2022.</p>
+<!--more-->
+
 <h3>Table of Contents:</h3>
 <ul class="contents">
     <li><a href="#news">Recent News</a></li>
+    <li><a href="#events">Upcoming Events</a></li>
     <li><a href="#ideas">CCS Proposal Ideas</a></li>
     <li><a href="#proposals">CCS Proposals Need Funding</a></li>
     <li><a href="#stats">Price & Blockchain Stats</a></li>
@@ -11,131 +22,141 @@
 <h3 id="news">Recent News</h3>
 
 <div class="newsbyte">
-    <h4><a href="https://www.reddit.com/r/Monero/comments/nbirlz/update_cake_wallet_version_421_now_with_litecoin/">Cake Wallet has released a large update for their wallet</a>. It now includes Litecoin as one of the supported coins.</h4>
+    <h4>Monero contributor, rbrunner7, <a href="https://teddit.net/r/Monero/comments/sczdrk/no_wallet_left_behind_make_sure_our_wallets/" target="_blank">sparked a discussion</a> to come up with project management and development milestones to push Seraphis/Jamtis network upgrade forward, having <a href="https://github.com/monero-project/monero/issues/8157" target="_blank">"No wallet left behind"</a>.</h4>
 </div>
 
 <div class="newsbyte">
-    <h4><a href="https://www.getmonero.org/2021/05/14/monero-GUI-0.17.2.2-released.html">Another GUI version is out</a> that fixes bugs that some users face.</h4>
+    <h4>Reddit user, CryptoGrampy, released <a href="https://teddit.net/r/Monero/comments/sde9hf/monero_drag_n_drop_dashboard_poc_codedemo/" target="_blank">Monero Drag n' Drop Dashboard PoC</a>. The code is found <a href="https://github.com/CryptoGrampy/monero-dashboard" target="_blank">here</a>. Issues and pull requests are welcome.</h4>
 </div>
 
 <div class="newsbyte">
-    <h4>Monero contributor mjxmr has released another <a href="https://www.reddit.com/r/Monero/comments/nd5qnn/my_3rd_dev_report/">dev report for his CCS proposal</a>.</h4>
+    <h4><a href="https://github.com/SChernykh/p2pool/releases/tag/v1.6" target="_blank">P2Pool v1.6 is out</a>.</h4>
 </div>
 
 <div class="newsbyte">
-    <h4>The Spanish Monero-themed podcast, El Monero, <a href="https://youtu.be/EipQhmy3ptU">had the MMA fighter Yessica Ortega as a guest</a>.</h4>
+    <h4>P2Pool creator, SChernykh, launched a <a href="https://p2pool.io/tail.html" target="_blank">countdown website</a> to track <a href="https://www.getmonero.org/resources/moneropedia/tail-emission.html" target="_blank">tail emission's ignition</a>. Once it kicks off, Monero is going to have a fixed block reward of 0.6 XMR per block.</h4>
 </div>
 
+<h3 id="events">Upcoming Events</h3>
+
+<div class="event">
+    <p class="date" markdown="1">February 9, 2022 (Wednesday) – 16:00 UTC</p>
+    <p markdown="1">Farcaster XMR<->BTC Swap Dev Meeting - <a href="irc://irc.libera.chat/#monero-swap" target="_blank">#monero-swap</a> IRC channel; <a href="https://matrix.to/#/#monero-swap:monero.social" target="_blank">Matrix room</a>.</p>
+</div>
+
+<div class="event">
+    <p class="date" markdown="1">February 9, 2022 (Wednesday) – 17:00 UTC</p>
+    <p markdown="1">Research Lab Meeting - <a href="irc://irc.libera.chat/#monero-research-lab" target="_blank">#monero-research-lab</a> IRC channel; <a href="https://matrix.to/#/#monero-research-lab:monero.social" target="_blank">Matrix room</a>.</p>
+</div>
+
+<div class="event">
+    <p class="date" markdown="1">February 13, 2022 (Sunday) – 18:00 UTC</p>
+    <p markdown="1">MoneroKon 2022 Meeting - <a href="irc://irc.libera.chat/#monero-events" target="_blank">#monero-events</a> IRC channel; <a href="https://matrix.to/#/#monero-events:monero.social" target="_blank">Matrix room</a>.</p>
+</div>
 
 <h3 id="ideas">CCS Proposal Ideas</h3>
 
 <p>Below you can find recent CCS proposal ideas open for discussion.</p>
 
 <div class="proposal">
-<p><a href="https://repo.getmonero.org/monero-project/ccs-proposals/-/merge_requests/228" target="_blank">Continued Feather Wallet development (3 months)</a></p>
+<p><a href="https://repo.getmonero.org/monero-project/ccs-proposals/-/merge_requests/282" target="_blank">Monero Afghanistan Expansion Strategy</a>.</p>
 </div>
 
 <div class="proposal">
-<p><a href="https://repo.getmonero.org/monero-project/ccs-proposals/-/merge_requests/227" target="_blank">monero kubernetes operator</a></p>
-</div>
-
-<div class="proposal">
-<p><a href="https://repo.getmonero.org/monero-project/ccs-proposals/-/merge_requests/226" target="_blank">Proposal for a federated bazaar</a></p>
-</div>
-
-<div class="proposal">
-<p><a href="https://repo.getmonero.org/monero-project/ccs-proposals/-/merge_requests/225" target="_blank">Ben Evanoff's summer coding proposal</a></p>
-</div>
-
-<div class="proposal">
-<p><a href="https://repo.getmonero.org/monero-project/ccs-proposals/-/merge_requests/218" target="_blank">Danish translation of the Monero GUI Wallet and the Monero-site</a></p>
-</div>
-
-<div class="proposal">
-<p><a href="https://repo.getmonero.org/monero-project/ccs-proposals/-/merge_requests/213" target="_blank">Serbian translation of Monero GUI Wallet, Monero Means Money</a></p>
+<p><a href="https://repo.getmonero.org/monero-project/ccs-proposals/-/merge_requests/283" target="_blank">mj part time coding 2022-03</a>.</p>
 </div>
 
 <h3 id="proposals">CCS Proposals Need Funding</h3>
 
-<p>None. All funded. :) But keep a look out for proposals in the future, or donate to the General Fund (<a href="#donate">donation address</a> at the bottom of the Revuo).</p>
+<div class="proposal">
+    <p><a href="https://ccs.getmonero.org/proposals/MoneroKon-2022-CCS.html" target="_blank">MoneroKon 2022</a> by midipoet.</p>
+    <p>Raised <b>282.09 of 328.00</b> XMR.</p>
+</div>
+
+<div class="proposal">
+    <p><a href="https://ccs.getmonero.org/proposals/v1docq47-video-creation-and-translations-into-russian-(february-july-2022).html" target="_blank">video creation and translations into Russian (february - july 2022)</a> by v1docq47.</p>
+    <p>Raised <b>23.9 of 62</b> XMR.</p>
+</div>
 
 <h3 id="stats">Price & Blockchain Stats</h3>
 
 <h4 class="stat">Blockchain Stats</h4>
 
 <div class="bcstats">
-    <p>Block height: <b>2363853</b></p>
-    <p>Hash rate: <b>2.542 GH/s</b></p>
-    <p>Average Tx per block: <b>33.64</b></p>
-    <p>Weekly Moving Average Tx per day: <b>24,127</b></p>
-    <p>Block reward: <b>1.02 XMR</b></p>
+    <p>Block height: <b>2548207</b></p>
+    <p>Hash rate: <b>3.235 GH/s</b></p>
+    <p>Average Tx per block: <b>29.86</b></p>
+    <p>Weekly Moving Average Tx per day: <b>21,437</b></p>
+    <p>Block reward: <b>~0.72 XMR</b></p>
 </div>
-<p class="note">Data taken on May 18, 2021</p>
+<p class="note">Data taken on Feb 04, 2022</p>
 
 <h4 class="stat">XMR Blocks Distribution in last 1000 blocks</h4>
-<p><img src="/static/revuo/img/content/hashrate-pool-distribution-0518.png" alt="Hashrate Pool Distribution Pie Chart"/></p>
+<p><img src="/static/revuo/img/content/hashrate-pool-distribution-0129.png" alt="Hashrate Pool Distribution Pie Chart"/></p>
 
 <h4 class="stat" id="price-stat">Price & Performance</h4>
 
-<div class="price-intro">XMR Market Cap: <b>$6,163,517,510</b><br/>Localmonero.co Street Price: <b>$344.47</b></div>
+<div class="price-intro">XMR Market Cap: <b>$2,773,476,459</b><br/>Localmonero.co Street Price: <b>$157.25</b></div>
 
 <p class="table-title">Monero (XMR) Price</p>
 <table class="price-table">
   <tr class="row1">
     <th></th>
-    <th>05/18/21</th>
+    <th>02/04/22</th>
     <th>Week</th>
     <th>Month</th>
     <th>Year</th>
   </tr>
   <tr>
     <td data-th="XMR to">USD</td>
-    <td data-th="05/18/21">$343.72</td>
-    <td data-th="Week" class="red">-22.3%</td>
-    <td data-th="Month" class="red">-5.5%</td>
-    <td data-th="Year" class="green">+428.2%</td>
+    <td data-th="02/04/22">$154.05</td>
+    <td data-th="Week" class="green">+1.2%</td>
+    <td data-th="Month" class="red">-31.9%</td>
+    <td data-th="Year" class="green">+9.3%</td>
   </tr>
   <tr class="row3">
     <td data-th="XMR to">EUR</td>
-    <td data-th="05/18/21">€281.15</td>
-    <td data-th="Week" class="red">-22.8%</td>
-    <td data-th="Month" class="red">-7.3%</td>
-    <td data-th="Year" class="green">+367.5%</td>
+    <td data-th="02/04/22">€137.59</td>
+    <td data-th="Week" class="green">+2.9%</td>
+    <td data-th="Month" class="red">-30.8%</td>
+    <td data-th="Year" class="green">+19.0%</td>
   </tr>
   <tr>
     <td data-th="XMR to">BTC</td>
-    <td data-th="05/18/21">B0.00793702</td>
-    <td data-th="Week" class="green">+0.3%</td>
-    <td data-th="Month" class="green">+31.2%</td>
-    <td data-th="Year" class="green">+17.8%</td>
+    <td data-th="02/04/22">₿0.00403653</td>
+    <td data-th="Week" class="red">-6.5%</td>
+    <td data-th="Month" class="red">-15.3%</td>
+    <td data-th="Year" class="red">-1.8%</td>
   </tr>
 </table>
-<p class="note">Data taken on May 18, 2021</p>
+<p class="note">Data taken on Feb 04, 2022</p>
 
 <p class="table-title">XMR Price Graph</p>
 
-![XMR Price Graph 05/10/21-05/18/21](/static/revuo/img/content/weekly-chart-0518.png "XMR Price Graph 05/10/21-05/18/21") 
+![XMR Price Graph 01/30/22-02/04/22](/static/revuo/img/content/weekly-chart-0129.png "XMR Price Graph 01/30/22-02/04/22") 
 
-Sources: <a href="https://community.xmr.to/explorer/mainnet/" target="_blank">community.xmr.to</a>, <a href="https://moneroblocks.info/stats/transaction-stats" target="_blank">moneroblocks.info</a>, <a href="https://miningpoolstats.stream/monero" target="_blank">miningpoolstats.stream</a>, <a href="https://bitinfocharts.com/monero/" target="_blank">bitinfocharts.com</a>, <a href="https://www.coingecko.com/" target="_blank">coingecko.com</a>, <a href="https://localmonero.co/" target="_blank">localmonero.co</a>
+Sources: <a href="https://miningpoolstats.stream/monero" target="_blank">miningpoolstats.stream</a>; <a href="https://bitinfocharts.com/monero/" target="_blank">bitinfocharts.com</a>; <a href="https://www.coingecko.com/en/coins/monero" target="_blank">coingecko.com</a>; <a href="https://localmonero.co/statistics" target="_blank">localmonero.co statistics</a>; <a href="https://localmonero.co/blocks" target="_blank">localmonero.co blocks</a>.
 
 <h3 id="volunteer">Volunteer Opportunities</h3>
 
-<p>If you want to get involved in making Monero better, but aren’t sure how, check out the volunteer opportunities below.</p>
+<p>If you want to get involved in making Monero better, but aren't sure how, check out some volunteer opportunities.</p>
 
 <div class="newsbyte">
     <p class="date"><a href="https://github.com/monero-project/monero" target="_blank">Test Monero Core Software</a></p>
-    <p>Anyone with moderate technical ability is encouraged to try to build and run Monero nightlies. Do not trust it with your Monero, but feel free to open an Issue on Github as problems arise. Instructions to build on your OS of choice can be found <a href="https://github.com/monero-project/monero#compiling-monero-from-source" target="_blank">on GitHub</a>. </p>
+    <p>Anyone with moderate technical ability is encouraged to try to build and run Monero nightlies. Do not trust it with your Monero, but feel free to open an Issue on GitHub as problems arise. Instructions to build on your OS of choice can be found <a href="https://github.com/monero-project/monero#compiling-monero-from-source" target="_blank">here</a>. </p>
 </div>
 
 <div class="newsbyte">
     <p class="date"><a href="https://github.com/monero-project/monero" target="_blank">Getting Started with Helping Monero</a></p>
-    <p>If you are new to Monero and want to contribute, please check out <a href="https://www.monerooutreach.org/stories/getting-started-helping-monero.php" target="_blank">this article about volunteering and contributing to Monero</a> from the Monero Outreach Group. </p>
+    <p>If you are new to Monero and want to contribute, please check out <a href="https://www.monerooutreach.org/stories/getting-started-helping-monero.php" target="_blank">this article about volunteering and contributing to Monero</a> from the Monero Outreach Workgroup. </p>
 </div>
 
 <h3 id="donate">Donate</h3>
 
-<p markdown="1">If you enjoy this publication and want to support it, we encourage you to donate to the Monero General Fund, using the following address:</p>
+<p markdown="1">Revuo is an independent newsletter. If you enjoy this publication and want to support it, you can send some XMR to this subaddress:</p>
 
-<p class="address" markdown="1">44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A</p>
+<p class="address" markdown="1">89Esx7ZAoVcD9wiDw57gxgS7m52sFEEbQiFC4qq18YZy3CdcsXvJ67FYdcDFbmYEGK7xerxgmDptd1C2xLstCbgF3RUhSMT</p>
 
-<!--p><a href="monero:44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A" class="qr"><img src="/static/revuo/img/content/donate-monero.png"></a></p-->
+<p><center><a href="monero:89Esx7ZAoVcD9wiDw57gxgS7m52sFEEbQiFC4qq18YZy3CdcsXvJ67FYdcDFbmYEGK7xerxgmDptd1C2xLstCbgF3RUhSMT" class="qr"><img src="/static/revuo/img/content/donate-monero.jpg" style="max-width: 200px;"/></a></center></p>
+
+Comments, criticisms, want to share links to be included in future issues? Contact us at **rotten@revuo-xmr.com**.
