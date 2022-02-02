@@ -19,11 +19,11 @@
     {%endif%}
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:title" content="{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-	<meta name="twitter:image" content="{%if page.image %}https://revuo-xmr.com{{ page.image }}{% else %}https://revuo-xmr.com/img/revuo-monero.png{% endif %}">
+	<meta name="twitter:image" content="{%if page.image %}https://revuo-xmr.com{{ page.image }}{% else %}https://revuo-xmr.com//img/revuo-monero.png{% endif %}">
 	<meta property="og:site_name" content="{{ site.title }}" />
 	<meta property="og:title" content="{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
-	<meta property="og:image" content="{%if page.image %}https://revuo-xmr.com{{ page.image }}{% else %}https://revuo-xmr.com/img/revuo-monero.png{% endif %}" />
-
+	<meta property="og:image" content="{%if page.image %}https://revuo-xmr.com{{ page.image }}{% else %}https://revuo-xmr.com//img/revuo-monero.png{% endif %}" />
+	
 	<!-- CSS & fonts -->
 	<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl | replace: '//', '/' }}">
 	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Serif:400,700' rel='stylesheet' type='text/css'>
