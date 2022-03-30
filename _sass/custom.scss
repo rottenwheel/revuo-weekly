@@ -5,7 +5,7 @@ p.note {
 }
 
 .bcstats {
-    background-color: #f0f0f0;
+    background-color: var(--block-bg-color);
     margin-bottom: 1.3334rem;
     border-radius: 2px;
 }
@@ -197,7 +197,7 @@ p.date {
 .proposal {
     margin-bottom: 1rem;
     padding: 1em;
-    background-color: #d7d7d7;
+    background-color: var(--block-bg-color);
 }
 
 .proposal p {
