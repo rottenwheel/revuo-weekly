@@ -4,3 +4,69 @@
 
 //Import
 @import "base", "mixin", "typography", "layout", "syntax.scss", "custom.scss";
+
+
+
+/////////////////////////////////////////
+/////////////////////////////////////////
+/////////////////////////////////////////
+//////////// LIGHT THEME ////////////////
+/////////////////////////////////////////
+/////////////////////////////////////////
+/////////////////////////////////////////
+
+//html {
+  //background-color: #0f0f0f;
+  ////background-color: #f0f0f0;
+
+//html {
+  //[>background-color: #0f0f0f;<]
+  ////background-color: #f0f0f0;
+  //background-color: lightblue;
+//}
+
+
+////body {
+  //////background-color: #f0f0f0;
+  ////background-color: #0f0f0f;
+
+//body {
+  //[>background-color: #0f0f0f;<]
+  ////background-color: #f0f0f0;
+  //background-color: lightblue;
+//}
+
+:root {
+    --primary-color: #888888;
+    --secondary-color: #666666;
+    --font-color: #999999;
+    --bg-color: #0f0f0f;
+    --heading-color: #454545;
+}
+
+[data-theme="dark"] {
+    --primary-color: #666666;
+    --secondary-color: #555555;
+    --font-color: #555555;
+    --bg-color: #f0f0f0;
+    --heading-color: #666666;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--font-color);
+}
+
+html {
+    background-color: var(--bg-color);
+    color: var(--font-color);
+}
+
+h1 {
+    color: var(--secondary-color);
+}
+
+a {
+    color: var(--primary-color);
+}
+
