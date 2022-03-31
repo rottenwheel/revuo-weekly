@@ -16,7 +16,7 @@ p.note {
 }
 
 .bcstats p:nth-child(even) {
-    background-color: #f6f6f6;
+    background-color: var(--blog-bg-color-secondary);
 }
 
 $breakpoint-alpha: 480px; // adjust to your needs
@@ -38,10 +38,10 @@ p.table-title {
   overflow: hidden;
   border-spacing: 0;
   @media (min-width: $breakpoint-alpha) {
-    background-color: #f0f0f0;
+    background-color: var(--block-bg-color);
     color: #45494f;
     tr.row3 {
-      background-color: #f6f6f6;
+      background-color: var(--blog-bg-color-secondary);
   }
   }
   
@@ -53,7 +53,7 @@ p.table-title {
   
     
   tr.row1 {
-    background-color: #45494f;
+    background-color: var(--block-bg-color-heading);
   }
   
   th {
@@ -232,7 +232,7 @@ img#veracrypt {
 
 p.address {
     background-color: var(--block-bg-color);
-    color: #45494f;
+    color: var(--primary-color);
     font-weight: bold;
     word-wrap: break-word;
     padding: 1.5rem;
