@@ -104,7 +104,7 @@ p.table-title {
   }
     
   th, td:before {
-    color: #fff;
+    color: var(--font-color);
   }
     
   td.green {
