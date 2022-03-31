@@ -38,7 +38,7 @@ p.table-title {
   overflow: hidden;
   border-spacing: 0;
   @media (min-width: $breakpoint-alpha) {
-    background-color: var(--block-bg-color);
+    background-color: #f0f0f0;
     color: #45494f;
     tr.row3 {
       background-color: #f6f6f6;
