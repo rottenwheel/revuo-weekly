@@ -38,7 +38,7 @@ p.table-title {
   overflow: hidden;
   border-spacing: 0;
   @media (min-width: $breakpoint-alpha) {
-    background: #f0f0f0;
+    background-color: var(--block-bg-color);
     color: #45494f;
     tr.row3 {
       background-color: #f6f6f6;
@@ -231,7 +231,7 @@ img#veracrypt {
 }
 
 p.address {
-    background-color: #f0f0f0;
+    background-color: var(--block-bg-color);
     color: #45494f;
     font-weight: bold;
     word-wrap: break-word;
