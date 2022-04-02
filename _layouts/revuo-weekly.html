@@ -1,71 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 {% include head.html %}
 
 <body>
 	<div id="wrap">
-        <div id="weekly">
-	  	
-	  	<!-- Navigation -->
-	  	{% include menu.html %}
-    
-    <!-- Icon menu -->
-	  <a {% if site.reverse == true %}id="nav-menu-left"{% else %}id="nav-menu"{% endif %}>
-	  	<div id="menu"></div>
-	  </a>
+		<div id="weekly">
 
-      <!-- Header -->
-      {% if site.custom_header == true %}
-        {% include header-custom.html %}
-      {% else %}
-        {% include header.html %}
-      {% endif %}
+			<!-- Navigation -->
+			{% include menu.html %}
 
-    <!-- Main content -->
-	  <div id="container">
-		  
-		<main>
+			<!-- Icon menu -->
+			<a {% if site.reverse == true %}id="nav-menu-left"{% else %}id="nav-menu"{% endif %}>
+				<div id="menu"></div>
+			</a>
 
-			{{ content }}
+			<!-- Header -->
+			{% if site.custom_header == true %}
+				{% include header-custom.html %}
+			{% else %}
+				{% include header.html %}
+			{% endif %}
 
-	  </main>
-		
-		  <!-- Pagination links -->
-          <div class="pagination">
-              {% if paginator.total_pages > 1 %}
-                <div class="page-numbers">
-                  {% if paginator.previous_page %}
-                    <a href="{{ paginator.previous_page_path}}" class="page-item prev">«</a>
-                  {% endif %}
+			<!-- Main content -->
+			<div id="container">
 
-                  {% for page in (1..paginator.total_pages) %}
-                   {% assign total = paginator.total_pages %}
-                   
-                   
-                    {% if page == paginator.page %}
-                       <p class="page-numbers-display">{{ page }} of {{total}}</p>
-                    
-                      
-                    
-                    {% endif %}
-                  {% endfor %}
+				<main>
+					{{ content }}
+				</main>
 
-                  {% if paginator.next_page %}
-                    <a href="{{ paginator.next_page_path}}" class="page-item next">»</a>
-                  {% endif %}
-                </div>
-                {% endif %}
-              </div>
+				<!-- Pagination links -->
+				<div class="pagination">
+				{% if paginator.total_pages > 1 %}
+					<div class="page-numbers">
+					{% if paginator.previous_page %}
+						<a href="{{ paginator.previous_page_path}}" class="page-item prev">«</a>
+					{% endif %}
 
-	  </div>
-	    
-	    <!-- Footer -->
-	    {% include footer.html %}
+					{% for page in (1..paginator.total_pages) %}
+					{% assign total = paginator.total_pages %}
+					{% if page == paginator.page %}
+						<p class="page-numbers-display">{{ page }} of {{total}}</p>
+					{% endif %}
+					{% endfor %}
 
-	    <!-- Script -->
-      {% include script.html %}
-            </div>
-	</div>
+					{% if paginator.next_page %}
+						<a href="{{ paginator.next_page_path}}" class="page-item next">»</a>
+					{% endif %}
+					</div>
+				{% endif %}
+				</div>
+
+			</div><!-- div#container -->
+			
+			<!-- Footer -->
+			{% include footer.html %}
+
+			<!-- Script -->
+			{% include script.html %}
+		</div><!-- div#weekly -->
+	</div><!-- div#wrap -->
 </body>
 </html>

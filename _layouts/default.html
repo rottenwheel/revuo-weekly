@@ -1,70 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 {% include head.html %}
 
 <body>
 	<div id="wrap">
 	  	
-	  	<!-- Navigation -->
-	  	{% include menu.html %}
-    
-    <!-- Icon menu -->
-	  <a {% if site.reverse == true %}id="nav-menu-left"{% else %}id="nav-menu"{% endif %}>
-	  	<div id="menu"></div>
-	  </a>
-
-      <!-- Header -->
-      {% if site.custom_header == true %}
-        {% include header-custom.html %}
-      {% else %}
-        {% include header.html %}
-      {% endif %}
-
-    <!-- Main content -->
-	  <div id="container">
-		  
-		<main>
-
-			{{ content }}
-
-	  </main>
+		<!-- Navigation -->
+		{% include menu.html %}
 		
-		  <!-- Pagination links -->
-              <div class="pagination">
-              {% if paginator.total_pages > 1 %}
-                <div class="page-numbers"><p>
-                  {% if paginator.previous_page %}
-                    <a href="{{ paginator.previous_page_path}}" class="page-button prev">Prev</a>
-                  {% endif %}
+		<!-- Icon menu -->
+		<a {% if site.reverse == true %}id="nav-menu-left"{% else %}id="nav-menu"{% endif %}>
+			<div id="menu"></div>
+		</a>
 
-                  {% for page in (1..paginator.total_pages) %}
-                   {% assign total = paginator.total_pages %}
-                   
-                   
-                    {% if page == paginator.page %}
-                       {{ page }} of {{total}}
-                    
-                      
-                    
-                    {% endif %}
-                  {% endfor %}
+		<!-- Header -->
+		{% if site.custom_header == true %}
+			{% include header-custom.html %}
+		{% else %}
+			{% include header.html %}
+		{% endif %}
 
-                  {% if paginator.next_page %}
-                    <a href="{{ paginator.next_page_path}}" class="page-button next">Next</a>
-                  {% endif %}
-                </p></div>
-                {% endif %}
-              </div>
+		<!-- Main content -->
+		<div id="container">
+			<main>
+				{{ content }}
+			</main>
+			
+			<!-- Pagination links -->
+			<div class="pagination">
+			{% if paginator.total_pages > 1 %}
+				<div class="page-numbers">
+					<p>
+					{% if paginator.previous_page %}
+						<a href="{{ paginator.previous_page_path}}" class="page-button prev">Prev</a>
+					{% endif %}
+					
+					{% for page in (1..paginator.total_pages) %}
+					{% assign total = paginator.total_pages %}
+					{% if page == paginator.page %}
+						{{ page }} of {{total}}
+					{% endif %}
+					{% endfor %}
 
-	  </div>
-	    
-	    <!-- Footer -->
-	    {% include footer.html %}
+					{% if paginator.next_page %}
+						<a href="{{ paginator.next_page_path}}" class="page-button next">Next</a>
+					{% endif %}
+					</p>
+				</div>
+			{% endif %}
+			</div>
+		</div>
 
-	    <!-- Script -->
-      {% include script.html %}
+		<!-- Footer -->
+		{% include footer.html %}
 
-	</div>
+		<!-- Script -->
+		{% include script.html %}
+
+	</div><!-- div#wrap -->
 </body>
 </html>
