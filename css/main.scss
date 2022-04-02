@@ -45,7 +45,7 @@
     --block-bg-color: #2f3234;
     --block-bg-color-secondary: #444444;
     --block-bg-color-heading: #333333;
-	--table-color: #fff;
+	--table-color: #ffffff;
 	--head-nav-bg-color: transparent;
 	--head-nav-text-color: #888888;
 }
@@ -81,16 +81,16 @@ h1 {
 a {
     color: var(--primary-color);
 }
+
 .moneroversary-table,
-.price-table{
+.price-table {
 	color: var(--table-color);
 }
-#weekly .revuo-classes a.wk {
-    background-color: var(--head-nav-bg-color);
-	color: var(--head-nav-text-color);
-}
 
-#periodical .revuo-classes a.pd, #wrap.periodical .revuo-classes a.pd:active, #wrap.periodical .revuo-classes a.pd:focus {
+#weekly .revuo-classes a.wk,
+#periodical .revuo-classes a.pd,
+#wrap.periodical .revuo-classes a.pd:active,
+#wrap.periodical .revuo-classes a.pd:focus {
     background-color: var(--head-nav-bg-color);
 	color: var(--head-nav-text-color);
 }

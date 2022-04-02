@@ -1,73 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 {% include head.html %}
 
 <body>
 	<div id="wrap">
-        <div id="periodical">
-	  	
-	  	<!-- Navigation -->
-	  	{% include menu.html %}
+		<div id="periodical">
+
+		<!-- Navigation -->
+		{% include menu.html %}
     
-    <!-- Icon menu -->
-	  <a {% if site.reverse == true %}id="nav-menu-left"{% else %}id="nav-menu"{% endif %}>
-	  	<div id="menu"></div>
-	  </a>
+		<!-- Icon menu -->
+		<a {% if site.reverse == true %}id="nav-menu-left"{% else %}id="nav-menu"{% endif %}>
+			<div id="menu"></div>
+		</a>
 
-      <!-- Header -->
-      {% if site.custom_header == true %}
-        {% include header-custom.html %}
-      {% else %}
-        {% include header.html %}
-      {% endif %}
+		<!-- Header -->
+		{% if site.custom_header == true %}
+			{% include header-custom.html %}
+		{% else %}
+			{% include header.html %}
+		{% endif %}
 
-    <!-- Main content -->
-	  <div id="container">
-		  
-		<main>
-
-			{{ content }}
-
-	  </main>
+		<!-- Main content -->
+		<div id="container">
+			<main>
+				{{ content }}
+			</main>
 		
-		  <!-- Pagination links -->
-      {% if paginator.total_pages > 1 %}
-        <div class="pagination">
-          {% if paginator.previous_page == 1 %}
-            <a href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}" class="page-item">&laquo;</a>
-          {% elsif paginator.previous_page%}
-            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="page-item">&laquo;</a>
-          {% else %}
-            <span class="page-item">&laquo;</span>
-          {% endif %}
-        
-          {% for page in (1..paginator.total_pages) %}
-            {% if page == paginator.page %}
-              <span class="page-item">{{ page }}</span>
-            {% elsif page == 1 %}
-              <a href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}" class="page-item">{{ page }}</a>
-            {% else %}
-              <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}" class="page-item">{{ page }}</a>
-            {% endif %}
-          {% endfor %}
-        
-          {% if paginator.next_page %}
-            <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="page-item">&raquo;</a>
-          {% else %}
-            <span class="page-item">&raquo;</span>
-          {% endif %}
-        </div>
-        {% endif %}
+			<!-- Pagination links -->
+			{% if paginator.total_pages > 1 %}
+			<div class="pagination">
+				{% if paginator.previous_page == 1 %}
+					<a href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}" class="page-item">&laquo;</a>
+				{% elsif paginator.previous_page%}
+					<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="page-item">&laquo;</a>
+				{% else %}
+					<span class="page-item">&laquo;</span>
+				{% endif %}
 
-	  </div>
+				{% for page in (1..paginator.total_pages) %}
+				{% if page == paginator.page %}
+					<span class="page-item">{{ page }}</span>
+				{% elsif page == 1 %}
+					<a href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}" class="page-item">{{ page }}</a>
+				{% else %}
+					<a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}" class="page-item">{{ page }}</a>
+				{% endif %}
+				{% endfor %}
+
+				{% if paginator.next_page %}
+					<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="page-item">&raquo;</a>
+				{% else %}
+					<span class="page-item">&raquo;</span>
+				{% endif %}
+			</div>
+			{% endif %}
+
+		</div><!-- div#container -->
 	    
-	    <!-- Footer -->
-	    {% include footer.html %}
+		<!-- Footer -->
+		{% include footer.html %}
 
-	    <!-- Script -->
-      {% include script.html %}
-        </div>
-	</div>
+		<!-- Script -->
+		{% include script.html %}
+		</div><!-- div#periodical -->
+	</div><!-- div#wrap -->
 </body>
 </html>
