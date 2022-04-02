@@ -49,6 +49,7 @@
 	--table-color: #cecece;
 	--head-nav-bg-color: transparent;
 	--head-nav-text-color: #d56f2a;
+	--menu-color: #e1e1e1;
 }
 // Was entered incorrectly.. Dark = Light
 [data-theme="dark"] {
@@ -63,6 +64,7 @@
 	--table-color: #000000;
 	--head-nav-bg-color: transparent;
 	--head-nav-text-color: #d56f2a;
+	--menu-color: #202225;
 }
 
 body {
@@ -97,5 +99,11 @@ a {
 }
 
 time.by-line{
-color: var(--table-color);
+	color: var(--table-color);
+}
+
+#menu,
+#menu::after,
+#menu::before{
+	background-color: var(--menu-color);
 }
