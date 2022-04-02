@@ -36,6 +36,7 @@
   //background-color: lightblue;
 //}
 
+// Default Style (Dark)
 :root {
     --primary-color: #888888;
     --secondary-color: #666666;
@@ -45,11 +46,11 @@
     --block-bg-color: #2f3234;
     --block-bg-color-secondary: #444444;
     --block-bg-color-heading: #333333;
-	--table-color: #ffffff;
+	--table-color: #cecece;
 	--head-nav-bg-color: transparent;
-	--head-nav-text-color: #888888;
+	--head-nav-text-color: #d56f2a;
 }
-
+// Was entered incorrectly.. Dark = Light
 [data-theme="dark"] {
     --primary-color: #666666;
     --secondary-color: #555555;
@@ -59,7 +60,7 @@
     --block-bg-color: #d7d7d7;
     --block-bg-color-secondary: #c0c0c0;
     --block-bg-color-heading: #a5a5a5;
-	--table-color: #cecece;
+	--table-color: #ffffff;
 	--head-nav-bg-color: transparent;
 	--head-nav-text-color: #d56f2a;
 }
