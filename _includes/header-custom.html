@@ -1,4 +1,6 @@
 <header id="header">
+	<a href="/atom.xml" target="_blank"><img class="rss-icon" src="/img/rss-32x32.png" alt="ATOM Feed" title="ATOM Feed" /></a>
+	
 	<!-- Dark Mode Button -->
 	<label class="switch">
 		<input type="checkbox">
@@ -7,13 +9,11 @@
 	
 	<div>
         <a href="{{ site.baseurl }}">
-		<img class="logo" src="{{ "/img/revuo-monero-logo.png" | prepend: site.baseurl | replace: '//', '/' }}" alt="Revuo Monero Logo">
-	    	</a>
+		  <img class="logo" src="{{ "/img/revuo-monero-logo.png" | prepend: site.baseurl | replace: '//', '/' }}" alt="Revuo Monero Logo">
+	    </a>
     </div>
     <div class="revuo-classes">
         <a href="{{ site.baseurl }}" class="wk">Weekly</a>
         <a href="/periodicals/" class="pd">Periodical</a>
     </div>
-	
-	<img class="rss-icon" src="{{ "/img/rss-32x32.png" | prepend: site.baseurl | replace: '//', '/' }}" alt="ATOM Feed" title="ATOM Feed">
 </header>
