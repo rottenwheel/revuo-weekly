@@ -1,5 +1,13 @@
 <nav {% if site.reverse == true %}id="nav-left"{% else %}id="nav"{% endif %}>
 	<div id="nav-list">
+		<div class="nav-actions">
+			<!-- Dark Mode Button -->
+			<label class="switch">
+				<input type="checkbox">
+				<span class="slider round"></span>
+			</label>
+			<a class="rss" href="/atom.xml" target="_blank"><img class="rss-icon" src="/img/rss_1.png" alt="ATOM Feed" title="ATOM Feed" /></a>
+		</div>
 		<a href="{{ site.baseurl }}">Revuo Weekly</a>
 
 		<!-- Nav pages -->

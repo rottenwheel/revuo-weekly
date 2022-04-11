@@ -45,15 +45,33 @@ html, body {
   @include open(14rem);
 }
 
-/* Separator after menu */
+#nav-list {
 
-#nav-list:after {
-  display: block;
-  content: '';
-  width: 5rem;
-  height: 1px;
-  margin: 23px auto;
-  background-color: $background-color;
+  .nav-actions {
+    /* Will turn to flex on mobile */
+    display: none;
+    gap: 12px;
+    justify-content: center;
+    
+    .rss {
+      padding: 0;
+
+      .rss-icon {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  
+  /* Separator after menu */
+  &:after {
+    display: block;
+    content: '';
+    width: 5rem;
+    height: 1px;
+    margin: 23px auto;
+    background-color: $background-color;
+  }
 }
 
 /* Icon menu */

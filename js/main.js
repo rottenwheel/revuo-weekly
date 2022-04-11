@@ -4,14 +4,16 @@ var reverse = document.getElementById("nav-menu-left");
 var icon = normal !== null ? normal : reverse;
 
 
-const toggleSwitch = document.querySelector('.switch input[type="checkbox"]');
+const toggleSwitches = document.querySelectorAll('.switch input[type="checkbox"]');
 const currentTheme = localStorage.getItem('theme');
 
 if (currentTheme) {
 	document.documentElement.setAttribute('data-theme', currentTheme);
  
 	if (currentTheme === 'dark') {
-		toggleSwitch.checked = true;
+		toggleSwitches.forEach(s => s.checked = true);
+	} else {
+		toggleSwitches.forEach(s => s.checked = false);
 	}
 }
 
@@ -19,13 +21,15 @@ function switchTheme(e) {
 	if (e.target.checked) {
 		document.documentElement.setAttribute('data-theme', 'dark');
 		localStorage.setItem('theme', 'dark');
+		toggleSwitches.forEach(s => s.checked = true);
 	} else {
 		document.documentElement.setAttribute('data-theme', 'light');
 		localStorage.setItem('theme', 'light');
+		toggleSwitches.forEach(s => s.checked = false);
 	}
 }
 
-toggleSwitch.addEventListener('change', switchTheme, false);
+toggleSwitches.forEach((s) => s.addEventListener('change', switchTheme, false));
 
 
 

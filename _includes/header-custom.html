@@ -1,17 +1,17 @@
 <header id="header">
-	<a class="rss" href="/atom.xml" target="_blank"><img class="rss-icon" src="/img/rss_1.png" alt="ATOM Feed" title="ATOM Feed" /></a>
+	<div class="action-container">
+		<!-- Dark Mode Button -->
+		<label class="switch">
+			<input type="checkbox">
+			<span class="slider round"></span>
+		</label>
+		<a class="rss" href="/atom.xml" target="_blank"><img class="rss-icon" src="/img/rss_1.png" alt="ATOM Feed" title="ATOM Feed" /></a>
+	</div>
 	
-	<!-- Dark Mode Button -->
-	<label class="switch">
-		<input type="checkbox">
-		<span class="slider round"></span>
-	</label>
-	
-	<div>
-        <a href="{{ site.baseurl }}">
-		  <img class="logo" src="{{ "/img/revuo-monero-logo.png" | prepend: site.baseurl | replace: '//', '/' }}" alt="Revuo Monero Logo">
-	    </a>
-    </div>
+	<a href="{{ site.baseurl }}">
+		<img class="logo" src="{{ "/img/revuo-monero-logo.png" | prepend: site.baseurl | replace: '//', '/' }}" alt="Revuo Monero Logo">
+	</a>
+
     <div class="revuo-classes">
         <a href="{{ site.baseurl }}" class="wk">Weekly</a>
         <a href="/periodicals/" class="pd">Periodical</a>

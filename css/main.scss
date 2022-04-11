@@ -3,7 +3,7 @@
 ---
 
 //Import
-@import "base", "mixin", "typography", "layout", "syntax.scss", "custom.scss";
+@import "base", "mixin", "typography", "layout", "syntax.scss", "custom.scss", "responsive.scss";
 
 
 
@@ -108,17 +108,18 @@ time.by-line {
 	background-color: var(--menu-color);
 }
 
-#header img.logo {
-	margin-left: 122px;
-}
-
-#header img.rss-icon {
-	float: right;
-	right: 80px;
-	top: 13px;
-	position: relative;
+#header .action-container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  height: 36px;
+  position: absolute;
+  right: 80px;
+  top: 35px;
 }
 
 #header a.rss {
 	display: block;
+  padding-bottom: 0;
 }
