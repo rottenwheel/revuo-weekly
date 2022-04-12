@@ -127,7 +127,9 @@ time.by-line {
   position: absolute;
 }
 
-#header a.rss {
-	display: block;
-  padding-bottom: 0;
+#header {
+  a.rss, a.donate {
+    display: block;
+    padding-bottom: 0;
+  }
 }

@@ -53,10 +53,9 @@ html, body {
     gap: 12px;
     justify-content: center;
     
-    .rss {
+    .icon {
       padding: 0;
-
-      .rss-icon {
+      > img {
         margin-bottom: 0;
       }
     }
