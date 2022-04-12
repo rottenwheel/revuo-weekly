@@ -109,14 +109,22 @@ time.by-line {
 }
 
 #header .action-container {
+  &--left {
+    left: 25px;
+    top: 35px;
+  }
+
+  &--right {
+    right: 80px;
+    top: 35px;
+  }
+
   align-items: center;
   display: flex;
   flex-direction: row;
   gap: 12px;
   height: 36px;
   position: absolute;
-  right: 80px;
-  top: 35px;
 }
 
 #header a.rss {
