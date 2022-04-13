@@ -41,6 +41,7 @@
     --primary-color: #888888;
     --secondary-color: #666666;
     --font-color: #cecece;
+    --link-color: #e6e6e6;
     --bg-color: #0f0f0f;
     --heading-color: #454545;
     --block-bg-color: #2f3234;
@@ -56,6 +57,7 @@
     --primary-color: #666666;
     --secondary-color: #555555;
     --font-color: #555555;
+    --link-color: #444444;
     --bg-color: #f0f0f0;
     --heading-color: #666666;
     --block-bg-color: #d7d7d7;
@@ -82,7 +84,7 @@ h1 {
 }
 
 a {
-    color: var(--primary-color);
+    color: var(--link-color);
 }
 
 .moneroversary-table,
