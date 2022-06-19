@@ -222,7 +222,7 @@ html, body {
     width: 5rem;
     height: 1px;
     margin: 23px auto;
-    background-color: lighten($text-color, 70%);
+    background-color: lighten($background-color, 70%) !important;
   }
 
 .by-line {
