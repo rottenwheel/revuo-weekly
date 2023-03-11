@@ -64,11 +64,14 @@
     --block-bg-color: #d7d7d7;
     --block-bg-color-secondary: #c0c0c0;
     --block-bg-color-heading: #a5a5a5;
-	--table-color: #000000;
-	--head-nav-bg-color: transparent;
-	--head-nav-text-color: #d56f2a;
-	--menu-color: #202225;
-	--license-color: #666666;
+    --table-color: #000000;
+    --nav-bg-color: #353637;
+    --nav-bg-hover-color: #d56f2a;
+    --nav-text-color: #d9dcde;
+    --head-nav-bg-color: transparent;
+    --head-nav-text-color: #d56f2a;
+    --menu-color: #d56f2a;
+    --license-color: #666666;
 }
 
 body {
@@ -107,10 +110,38 @@ p.by-line-post {
 	color: var(--table-color);
 }
 
+#nav-menu {
+	background-color: var(--head-nav-bg-color);
+}
+
 #menu,
 #menu::after,
 #menu::before {
 	background-color: var(--menu-color);
+}
+
+#nav {
+	background-color: var(--nav-bg-color);
+}
+
+#nav a, #nav-left a {
+	color: var(--nav-text-color);
+
+}
+
+#nav a:hover, #nav-left a:hover {
+	background-color: var(--nav-bg-hover-color);
+	color: var(--nav-bg-color);
+}
+
+#nav-list::after {
+	background-color: var(--nav-bg-hover-color);
+}
+
+#menu.btn-close::before,
+#menu.btn-close::after {
+	background-color: var(--nav-bg-hover-color);
+
 }
 
 #header .action-container {
