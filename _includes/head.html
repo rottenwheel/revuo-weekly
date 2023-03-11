@@ -6,14 +6,18 @@
 	<title>{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 	<meta name="description" content="Revuo Monero is a weekly newsletter where you can find find the most recent Monero news.">
 	<meta name="keywords" content="monero, xmr, bitmonero, cryptocurrency">
-	<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32_1.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16_1.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon_1.png">
 	<meta name="application-name" content="{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
-	<meta name="msapplication-TileColor" content="#ffffff" />
-	<meta name="theme-color" content="#193e4c">
 	<meta name="apple-mobile-web-app-title" content="{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-	<meta name="apple-mobile-web-app-status-bar-style" content="#193e4c">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#2f3136">
+	
+	<link rel="apple-touch-icon" sizes="180x180" href="/img/icons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/img/icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="/img/icons/android-chrome-192x192.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/img/icons/favicon-16x16.png">
+	<link rel="manifest" href="/img/icons/site.webmanifest">
+	<link rel="mask-icon" href="/img/icons/safari-pinned-tab.svg" color="#d56f2a">
+	<meta name="msapplication-TileColor" content="#d56f2a">
+	<meta name="theme-color" content="#2f3136">
 	
 	{% if page.path contains '_posts' %}
 	<link rel="canonical" href="{{ page.issuenumber | replace:'index.html','' | prepend: "https://revuo-xmr.com/" }}" />
