@@ -72,6 +72,7 @@
     --head-nav-text-color: #d56f2a;
     --menu-color: #d56f2a;
     --license-color: #666666;
+    --footer-bg-color: #202225;
 }
 
 body {
@@ -142,6 +143,11 @@ p.by-line-post {
 #menu.btn-close::after {
 	background-color: var(--nav-bg-hover-color);
 
+}
+
+.footer {
+	background-color: var(--footer-bg-color);
+	color: var(--nav-text-color);
 }
 
 #header .action-container {
