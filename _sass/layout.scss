@@ -1,13 +1,15 @@
 /* -- General Layout -- */
 
 /* Required for footer to stick to the bottom */
-html, body {
-	height: 100%;
+html,
+body {
+  height: 100%;
 }
 
 /* Navigation */
 
-#nav, #nav-left { 
+#nav,
+#nav-left {
   a {
     display: block;
     color: $background-color;
@@ -23,8 +25,8 @@ html, body {
     }
   }
   span {
-      font-weight: 200;
-    }
+    font-weight: 200;
+  }
 }
 
 #nav {
@@ -46,14 +48,13 @@ html, body {
 }
 
 #nav-list {
-
   .nav-actions {
     /* Will turn to flex on mobile */
     display: none;
     gap: 12px;
     justify-content: center;
     align-items: center;
-    
+
     .icon {
       padding: 0;
       > img {
@@ -62,11 +63,10 @@ html, body {
     }
   }
 
-  
   /* Separator after menu */
   &:after {
     display: block;
-    content: '';
+    content: "";
     width: 5rem;
     height: 1px;
     margin: 23px auto;
@@ -89,7 +89,8 @@ html, body {
   width: 1.5em;
   background-color: lighten($text-color, 35%);
   margin-top: 8px;
-  &:after, &:before {
+  &:after,
+  &:before {
     content: "";
     display: block;
     position: relative;
@@ -110,17 +111,17 @@ html, body {
   &.btn-close:before {
     top: 0;
     -webkit-transform: rotate(-45deg);
-       -moz-transform: rotate(-45deg);
-        -ms-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
     background-color: $background-color;
   }
   &.btn-close:after {
     top: -4px;
     -webkit-transform: rotate(45deg);
-       -moz-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-            transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
     background-color: $background-color;
   }
 }
@@ -136,67 +137,67 @@ html, body {
 }
 
 #container {
-	margin:0 auto;
-	max-width: 730px;
-	padding: 0 1.5rem;
+  margin: 0 auto;
+  max-width: 730px;
+  padding: 0 1.5rem;
 }
 
 #header {
-	text-align: center;
+  text-align: center;
   padding: 24px 0;
   position: relative;
   margin-bottom: 23px;
   @media (max-width: 480px) {
-      padding-top: 10px;
+    padding-top: 10px;
   }
   a {
-  	text-decoration: none;
-  	color: $text-color;
-  	display: inline-block;
+    text-decoration: none;
+    color: $text-color;
+    display: inline-block;
     border-bottom: none;
   }
   img {
-  	max-height: 100px;
-  	margin: 0 auto;
-  	display: block;
+    max-height: 100px;
+    margin: 0 auto;
+    display: block;
     @media (max-width: 940px) {
-        max-height: 90px;
+      max-height: 90px;
     }
     @media (max-width: 600px) {
-        max-height: 60px;
+      max-height: 60px;
     }
     @media (max-width: 480px) {
-        max-height: 50px;
+      max-height: 50px;
     }
   }
   h1 {
-  	font-family: 'Bebas Neue', sans-serif; //Emerald logo font
+    font-family: "Bebas Neue", sans-serif; //Emerald logo font
     font-weight: 400;
     font-size: 4.5em;
     color: #d26e2b;
     @media (max-width: 940px) {
-        padding: 0;
+      padding: 0;
     }
     @media (max-width: 600px) {
-        font-size: 3em;
+      font-size: 3em;
     }
     @media (max-width: 480px) {
-        font-size: 2.5em;
+      font-size: 2.5em;
     }
   }
   &:after {
-  	display: none;
-    content: '';
+    display: none;
+    content: "";
     width: 5rem;
     height: 1px;
     margin: 23px auto;
     background-color: lighten($text-color, 70%);
     @media (max-width: 480px) {
-        margin: 0.5rem auto;
+      margin: 0.5rem auto;
     }
   }
   @media (max-width: 600px) {
-      padding-bottom: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -212,18 +213,18 @@ html, body {
 #post-page {
   margin-bottom: 1.5em;
   @media (min-width: 940px) {
-      margin-bottom: 1.3334em;
-    }
+    margin-bottom: 1.3334em;
+  }
 }
 
-.post+.post:before {
-    display: block;
-    content: '';
-    width: 5rem;
-    height: 1px;
-    margin: 23px auto;
-    background-color: lighten($background-color, 70%) !important;
-  }
+.post + .post:before {
+  display: block;
+  content: "";
+  width: 5rem;
+  height: 1px;
+  margin: 23px auto;
+  background-color: lighten($background-color, 70%) !important;
+}
 
 .by-line {
   display: block;
@@ -262,14 +263,14 @@ img {
   margin: 0 auto;
   margin-bottom: 24px;
   -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-      -ms-border-radius: 4px;
-          border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
 }
 
 img[title="Emerald"] {
-    box-shadow: 0 2px 6px #ddd;
-  }
+  box-shadow: 0 2px 6px #ddd;
+}
 
 code {
   color: lighten($text-color, 35%);
@@ -278,7 +279,8 @@ code {
 
 /* Set the vertical rhythm (and padding-left) for lists inside post content */
 
-.content ul, .content ol {
+.content ul,
+.content ol {
   line-height: 1.5em; /* 24px/16px */
   padding-left: 1.5em;
   @media (min-width: 940px) {
@@ -307,12 +309,14 @@ code {
   padding: 0.5em 1em;
   border-bottom: none;
   -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-      -ms-border-radius: 4px;
-          border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
 }
-.page-item:hover, .page-item:active, .page-item:focus {
-    border-bottom: none;
+.page-item:hover,
+.page-item:active,
+.page-item:focus {
+  border-bottom: none;
 }
 
 /* Footer */
@@ -325,17 +329,17 @@ footer {
 }
 
 #wrap {
-	min-height:100%; 
-	position:relative;
-	padding-bottom: 105px;
+  min-height: 100%;
+  position: relative;
+  padding-bottom: 105px;
 }
 
 .footer {
-	padding: 25px 0;
-	background-color: $main-color;
-	color: $background-color;
-	text-align: center;
-	position: absolute;
+  padding: 25px 0;
+  background-color: $main-color;
+  color: $background-color;
+  text-align: center;
+  position: absolute;
   width: 100%;
   bottom: 0;
 }
