@@ -145,6 +145,15 @@ p.by-line-post {
 
 }
 
+.page-item {
+	background-color: var(--license-color);
+	color: var(--footer-bg-color);
+}
+
+.pagination a:hover {
+	background-color: var(--nav-bg-color);;
+}
+
 .footer {
 	background-color: var(--footer-bg-color);
 	color: var(--nav-text-color);
