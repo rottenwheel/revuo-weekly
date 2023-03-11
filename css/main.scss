@@ -5,8 +5,6 @@
 //Import
 @import "base", "mixin", "typography", "layout", "syntax.scss", "custom.scss", "responsive.scss";
 
-
-
 /////////////////////////////////////////
 /////////////////////////////////////////
 /////////////////////////////////////////
@@ -16,147 +14,146 @@
 /////////////////////////////////////////
 
 //html {
-  //background-color: #0f0f0f;
-  ////background-color: #f0f0f0;
+//background-color: #0f0f0f;
+////background-color: #f0f0f0;
 
 //html {
-  //[>background-color: #0f0f0f;<]
-  ////background-color: #f0f0f0;
-  //background-color: lightblue;
+//[>background-color: #0f0f0f;<]
+////background-color: #f0f0f0;
+//background-color: lightblue;
 //}
 
-
 ////body {
-  //////background-color: #f0f0f0;
-  ////background-color: #0f0f0f;
+//////background-color: #f0f0f0;
+////background-color: #0f0f0f;
 
 //body {
-  //[>background-color: #0f0f0f;<]
-  ////background-color: #f0f0f0;
-  //background-color: lightblue;
+//[>background-color: #0f0f0f;<]
+////background-color: #f0f0f0;
+//background-color: lightblue;
 //}
 
 // Default Style (Dark)
 :root {
-    --primary-color: #888888;
-    --secondary-color: #666666;
-    --font-color: #cecece;
-    --link-color: #e6e6e6;
-    --bg-color: #0f0f0f;
-    --heading-color: #454545;
-    --block-bg-color: #2f3234;
-    --block-bg-color-secondary: #444444;
-    --block-bg-color-heading: #333333;
-	--table-color: #cecece;
-	--head-nav-bg-color: transparent;
-	--head-nav-text-color: #d56f2a;
-	--menu-color: #e1e1e1;
-	--license-color: #666666;
+  --primary-color: #888888;
+  --secondary-color: #666666;
+  --font-color: #cecece;
+  --link-color: #e6e6e6;
+  --bg-color: #0f0f0f;
+  --heading-color: #454545;
+  --block-bg-color: #2f3234;
+  --block-bg-color-secondary: #444444;
+  --block-bg-color-heading: #333333;
+  --table-color: #cecece;
+  --head-nav-bg-color: transparent;
+  --head-nav-text-color: #d56f2a;
+  --menu-color: #e1e1e1;
+  --license-color: #666666;
 }
 // Was entered incorrectly.. Dark = Light
 [data-theme="dark"] {
-    --primary-color: #666666;
-    --secondary-color: #555555;
-    --font-color: #555555;
-    --link-color: #444444;
-    --bg-color: #2f3136;
-    --heading-color: #666666;
-    --block-bg-color: #d7d7d7;
-    --block-bg-color-secondary: #c0c0c0;
-    --block-bg-color-heading: #a5a5a5;
-    --table-color: #000000;
-    --nav-bg-color: #353637;
-    --nav-bg-hover-color: #d56f2a;
-    --nav-text-color: #d9dcde;
-    --head-nav-bg-color: transparent;
-    --head-nav-text-color: #d56f2a;
-    --menu-color: #d56f2a;
-    --license-color: #666666;
-    --footer-bg-color: #202225;
+  --primary-color: #666666;
+  --secondary-color: #555555;
+  --font-color: #555555;
+  --link-color: #444444;
+  --bg-color: #2f3136;
+  --heading-color: #666666;
+  --block-bg-color: #d7d7d7;
+  --block-bg-color-secondary: #c0c0c0;
+  --block-bg-color-heading: #a5a5a5;
+  --table-color: #000000;
+  --nav-bg-color: #353637;
+  --nav-bg-hover-color: #d56f2a;
+  --nav-text-color: #d9dcde;
+  --head-nav-bg-color: transparent;
+  --head-nav-text-color: #d56f2a;
+  --menu-color: #d56f2a;
+  --license-color: #666666;
+  --footer-bg-color: #202225;
 }
 
 body {
-    background-color: var(--bg-color);
-    color: var(--font-color);
+  background-color: var(--bg-color);
+  color: var(--font-color);
 }
 
 html {
-    background-color: var(--bg-color);
-    color: var(--font-color);
+  background-color: var(--bg-color);
+  color: var(--font-color);
 }
 
 h1 {
-    color: var(--secondary-color);
+  color: var(--secondary-color);
 }
 
 a {
-    color: var(--link-color);
+  color: var(--link-color);
 }
 
 .moneroversary-table,
 .price-table {
-	color: var(--table-color);
+  color: var(--table-color);
 }
 
 #weekly .revuo-classes a.wk,
 #periodical .revuo-classes a.pd,
 #wrap.periodical .revuo-classes a.pd:active,
 #wrap.periodical .revuo-classes a.pd:focus {
-    background-color: var(--head-nav-bg-color);
-	color: var(--head-nav-text-color);
+  background-color: var(--head-nav-bg-color);
+  color: var(--head-nav-text-color);
 }
 
 time.by-line,
 p.by-line-post {
-	color: var(--table-color);
+  color: var(--table-color);
 }
 
 #nav-menu {
-	background-color: var(--head-nav-bg-color);
+  background-color: var(--head-nav-bg-color);
 }
 
 #menu,
 #menu::after,
 #menu::before {
-	background-color: var(--menu-color);
+  background-color: var(--menu-color);
 }
 
 #nav {
-	background-color: var(--nav-bg-color);
+  background-color: var(--nav-bg-color);
 }
 
-#nav a, #nav-left a {
-	color: var(--nav-text-color);
-
+#nav a,
+#nav-left a {
+  color: var(--nav-text-color);
 }
 
-#nav a:hover, #nav-left a:hover {
-	background-color: var(--nav-bg-hover-color);
-	color: var(--nav-bg-color);
+#nav a:hover,
+#nav-left a:hover {
+  background-color: var(--nav-bg-hover-color);
+  color: var(--nav-bg-color);
 }
 
 #nav-list::after {
-	background-color: var(--nav-bg-hover-color);
+  background-color: var(--nav-bg-hover-color);
 }
 
 #menu.btn-close::before,
 #menu.btn-close::after {
-	background-color: var(--nav-bg-hover-color);
-
+  background-color: var(--nav-bg-hover-color);
 }
 
 .page-item {
-	background-color: var(--license-color);
-	color: var(--footer-bg-color);
+  background-color: var(--license-color);
+  color: var(--footer-bg-color);
 }
 
 .pagination a:hover {
-	background-color: var(--nav-bg-color);;
+  background-color: var(--nav-bg-color);
 }
 
 .footer {
-	background-color: var(--footer-bg-color);
-	color: var(--nav-text-color);
+  background-color: var(--footer-bg-color);
+  color: var(--nav-text-color);
 }
 
 #header .action-container {
@@ -179,7 +176,8 @@ p.by-line-post {
 }
 
 #header {
-  a.rss, a.donate {
+  a.rss,
+  a.donate {
     display: block;
     padding-bottom: 0;
   }
