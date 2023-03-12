@@ -160,6 +160,14 @@ a.icon img {
   color: var(--nav-text-color);
 }
 
+img {
+  filter: invert(100%);
+}
+
+img.noColorChange {
+  filter: none;
+}
+
 #header .action-container {
   &--left {
     left: 25px;
