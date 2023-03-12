@@ -49,6 +49,7 @@
   --head-nav-text-color: #d56f2a;
   --menu-color: #e1e1e1;
   --license-color: #666666;
+  --filter-color: invert(100%);
 }
 // Was entered incorrectly.. Dark = Light
 [data-theme="dark"] {
@@ -70,6 +71,7 @@
   --menu-color: #d56f2a;
   --license-color: #666666;
   --footer-bg-color: #202225;
+  --filter-color: none;
 }
 
 body {
@@ -161,9 +163,12 @@ a.icon img {
 }
 
 img {
-  filter: invert(100%);
+  filter: var(--filter-color);
 }
 
+img.logo,
+a.icon img,
+a.qr img,
 img.noColorChange {
   filter: none;
 }
