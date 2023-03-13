@@ -33,13 +33,12 @@
 //background-color: lightblue;
 //}
 
-// Default Style (Dark)
 :root {
   --primary-color: #888888;
   --secondary-color: #666666;
   --font-color: #cecece;
   --link-color: #e6e6e6;
-  --bg-color: #0f0f0f;
+  --bg-color: #2f3136;
   --heading-color: #454545;
   --block-bg-color: #2f3234;
   --block-bg-color-secondary: #444444;
@@ -49,7 +48,11 @@
   --head-nav-text-color: #d56f2a;
   --menu-color: #e1e1e1;
   --license-color: #666666;
+  --footer-bg-color: #202225;
   --filter-color: invert(100%);
+  --nav-bg-color: #353637;
+  --nav-bg-hover-color: #d56f2a;
+  --nav-text-color: #d9dcde;
 }
 // Was entered incorrectly.. Dark = Light
 [data-theme="dark"] {
@@ -57,21 +60,21 @@
   --secondary-color: #555555;
   --font-color: #555555;
   --link-color: #444444;
-  --bg-color: #2f3136;
+  --bg-color: #f0f0f0;
   --heading-color: #666666;
   --block-bg-color: #d7d7d7;
   --block-bg-color-secondary: #c0c0c0;
   --block-bg-color-heading: #a5a5a5;
   --table-color: #000000;
-  --nav-bg-color: #353637;
-  --nav-bg-hover-color: #d56f2a;
-  --nav-text-color: #d9dcde;
   --head-nav-bg-color: transparent;
   --head-nav-text-color: #d56f2a;
   --menu-color: #d56f2a;
   --license-color: #666666;
   --footer-bg-color: #202225;
   --filter-color: none;
+  --nav-bg-color: #353637;
+  --nav-bg-hover-color: #d56f2a;
+  --nav-text-color: #d9dcde;
 }
 
 body {
