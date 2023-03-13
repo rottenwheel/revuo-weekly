@@ -6,23 +6,11 @@
 
 * {
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-html,
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul,
-ol,
-li,
-img {
+html, body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, img {
   margin: 0;
   padding: 0;
   border: 0;
@@ -30,42 +18,43 @@ img {
 
 /*- Base color -*/
 
-$main-color: #e9e9e9;
-$background-color: #0f0f0f;
+$main-color: #E9E9E9;
+$background-color: #0F0F0F;
 $text-color: #888888;
 
 /*- Base settings -*/
 
 html {
-  background-color: $background-color;
-  font-size: 16px;
-  scroll-behavior: smooth;
-  @media (min-width: 940px) {
-    font-size: 18px;
-  }
-  line-height: 1.5;
-  color: $text-color;
+	background-color: $background-color;
+	font-size: 16px;
+    scroll-behavior: smooth;
+	@media (min-width: 940px) {
+		font-size: 18px;
+	}
+	line-height: 1.5;
+	color: $text-color;
 }
+
 
 /*- Link -*/
 a {
-  color: $main-color;
-  outline: 0;
-  border-bottom: 2px dotted #6a6d72;
-  text-decoration: none;
-  font-weight: 700;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  &:hover,
-  &:focus {
-    color: #999999;
-    border-bottom: 2px dotted #333333;
-  }
+	color: $main-color;
+    outline: 0;
+    border-bottom: 2px dotted #6a6d72;
+	text-decoration: none;
+	font-weight: 700;
+    -webkit-transition: all .3s ease;
+       -moz-transition: all .3s ease;
+        -ms-transition: all .3s ease;
+         -o-transition: all .3s ease;
+            transition: all .3s ease;
+	&:hover,
+	&:focus {
+		color: #999999;
+        border-bottom: 2px dotted #333333;
+	}
 }
 
 a#nav-menu {
-  border-bottom: none;
+    border-bottom: none;
 }
