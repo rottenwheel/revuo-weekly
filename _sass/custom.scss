@@ -1,35 +1,36 @@
 p.note {
-    font-size: 0.7em;
-    margin-bottom: 1rem;
-    margin-top: -1rem;
+  font-size: 0.7em;
+  margin-bottom: 1rem;
+  margin-top: -1rem;
 }
 
 .bcstats {
-    background-color: var(--block-bg-color);
-    margin-bottom: 1.3334rem;
-    border-radius: 2px;
+  background-color: var(--block-bg-color);
+  margin-bottom: 1.3334rem;
+  border-radius: 2px;
 }
 
 .bcstats p {
-    padding: 1em;
-    margin: 0;
+  padding: 1em;
+  margin: 0;
 }
 
 .bcstats p:nth-child(even) {
-    background-color: var(--blog-bg-color-secondary);
+  background-color: var(--blog-bg-color-secondary);
 }
 
 $breakpoint-alpha: 480px; // adjust to your needs
 
 p.table-title {
-    margin: 0;
-    padding-bottom: 0.5em;
-    font-weight: 700;
-    font-size: 16px;
-    padding-top: 0.5em;
+  margin: 0;
+  padding-bottom: 0.5em;
+  font-weight: 700;
+  font-size: 16px;
+  padding-top: 0.5em;
 }
 
-.price-table, .moneroversary-table {
+.price-table,
+.moneroversary-table {
   margin: 0 0 1.3334rem 0;
   width: 100%; // adjust to your needs
   background: #45494f;
@@ -42,347 +43,354 @@ p.table-title {
     color: #45494f;
     tr.row3 {
       background-color: var(--blog-bg-color-secondary);
+    }
   }
-  }
-  
+
   tr {
     border-top: 2px solid #fff;
     border-bottom: 2px solid #fff;
   }
-  
-  
-    
+
   tr.row1 {
     background-color: var(--block-bg-color-heading);
   }
-  
+
   th {
-    display: none;   
+    display: none;
   }
-  
+
   td {
-    display: block; 
-    
+    display: block;
+
     &:first-child {
-      padding-top: .5em;
+      padding-top: 0.5em;
     }
     &:last-child {
-      padding-bottom: .5em;
+      padding-bottom: 0.5em;
     }
 
     &:before {
-      content: attr(data-th)": "; // who knew you could do this? The internet, that's who.
+      content: attr(data-th) ": "; // who knew you could do this? The internet, that's who.
       font-weight: bold;
 
       // optional stuff to make it look nicer
       width: 6.5em; // magic number :( adjust according to your own content
       display: inline-block;
       // end options
-      
+
       @media (min-width: $breakpoint-alpha) {
         display: none;
       }
     }
   }
-  
-  th, td {
+
+  th,
+  td {
     text-align: left;
-    margin: .5em 1em;
+    margin: 0.5em 1em;
     @media (min-width: $breakpoint-alpha) {
       display: table-cell;
-      padding: .25em .5em;
-      padding: 1em !important; 
+      padding: 0.25em 0.5em;
+      padding: 1em !important;
       &:first-child {
         padding-left: 0;
       }
-      
+
       &:last-child {
         padding-right: 0;
       }
     }
-
   }
-    
-  th, td:before {
+
+  th,
+  td:before {
     color: #fff;
   }
-    
+
   td.green {
-    color: #66d166; 
+    color: #66d166;
     @media (min-width: $breakpoint-alpha) {
-        color: #51a751;
+      color: #51a751;
     }
   }
-    
+
   td.red {
-    color: #e36f6e; 
+    color: #e36f6e;
     @media (min-width: $breakpoint-alpha) {
-        color: #d83231;
+      color: #d83231;
     }
   }
-    
 }
 
 .moneroversary-table {
-    margin: 1.3334rem 0 1.3334rem 0;
-    @media (max-width: $breakpoint-alpha) {
+  margin: 1.3334rem 0 1.3334rem 0;
+  @media (max-width: $breakpoint-alpha) {
     background: #f0f0f0;
     color: #45494f;
+  }
+  th,
+  td:before {
+    @media (max-width: $breakpoint-alpha) {
+      color: #45494f;
     }
-    th, td:before {
-        @media (max-width: $breakpoint-alpha) {
-        color: #45494f;
-        }
-    }
+  }
 }
 
 .moneroversary-table tr.row1 {
-    background-color: #db8b55;
+  background-color: #db8b55;
 }
 
 .content h3 {
-    margin-top: 3rem;
-    background-color: #45494f;
-    color: white;
-    padding-left: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 2px;
+  margin-top: 3rem;
+  background-color: #45494f;
+  color: white;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 2px;
 }
 
 .content h3.orange {
-    background-color: #db8b55;
+  background-color: #db8b55;
 }
 
-.content ul, .content ol {
-    line-height: 1.9;
+.content ul,
+.content ol {
+  line-height: 1.9;
 }
 
-.newsbyte, .event {
-    padding: 1rem;
-    background-color: var(--block-bg-color);
-    margin-top: 1rem;
+.newsbyte,
+.event {
+  padding: 1rem;
+  background-color: var(--block-bg-color);
+  margin-top: 1rem;
 }
 
-.newsbyte:first-of-type, .event:first-of-type {
-    margin-top: 0;
+.newsbyte:first-of-type,
+.event:first-of-type {
+  margin-top: 0;
 }
 
 .newsbyte:after {
-    display: none;
-    content: '';
-    width: 100%;
-    height: 1px;
-    margin-top: 2rem;
-    background-color: #d5d5d5;
+  display: none;
+  content: "";
+  width: 100%;
+  height: 1px;
+  margin-top: 2rem;
+  background-color: #d5d5d5;
 }
 
-.newsbyte h4, h4.stat {
-    font-size: 18px;
-    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
-    font-weight: 700;
-    @media (max-width: 480px) {
-        font-size: 16px;
-    }
+.newsbyte h4,
+h4.stat {
+  font-size: 18px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 700;
+  @media (max-width: 480px) {
+    font-size: 16px;
+  }
 }
 
-.newsbyte p, .event p {
-    margin-bottom: 0;
+.newsbyte p,
+.event p {
+  margin-bottom: 0;
 }
 
 p.date {
-    margin-bottom: 0.2em;
-    font-weight: 700;
+  margin-bottom: 0.2em;
+  font-weight: 700;
 }
 
 .proposal {
-    margin-bottom: 1rem;
-    padding: 1em;
-    background-color: var(--block-bg-color);
+  margin-bottom: 1rem;
+  padding: 1em;
+  background-color: var(--block-bg-color);
 }
 
 .proposal p {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .proposal p:first-child {
-    padding-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .proposal p a {
-    line-height: 1.7;
+  line-height: 1.7;
 }
 
 img.merchant-img {
-    width: 15rem;
-    margin: 0 0 24px 0;
+  width: 15rem;
+  margin: 0 0 24px 0;
 }
 
 img#pepperworks {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 img#openpriv {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 img#veracrypt {
-    width: 10rem;
-    margin-top: 40px;
+  width: 10rem;
+  margin-top: 40px;
 }
 
 p.address {
-    background-color: var(--block-bg-color);
-    color: var(--link-color);
-    font-weight: bold;
-    word-wrap: break-word;
-    padding: 1.5rem;
-    margin-top: 1.5rem;
-    border-radius: 2px;
-    -webkit-touch-callout: all;
-    -webkit-user-select: all;
-    -khtml-user-select: all;
-    -moz-user-select: all;
-    -ms-user-select: all;
-    user-select: all;
+  background-color: var(--block-bg-color);
+  color: var(--link-color);
+  font-weight: bold;
+  word-wrap: break-word;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  border-radius: 2px;
+  -webkit-touch-callout: all;
+  -webkit-user-select: all;
+  -khtml-user-select: all;
+  -moz-user-select: all;
+  -ms-user-select: all;
+  user-select: all;
 }
 
 a.qr {
-    display: inline-block;
-    border: none;
-    border-radius: 10px;
+  display: inline-block;
+  border: none;
+  border-radius: 10px;
 }
 
 a.qr img {
-    margin-bottom: 0;
-    vertical-align: middle;
+  margin-bottom: 0;
+  vertical-align: middle;
 }
 
 img.merchant-img {
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 img.fob-img {
-    margin-left: auto;
-    margin-right: auto;
-    width: 8rem;
-    background-color: rgba(0, 0, 0, 0.75);;
-    padding: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 8rem;
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 1rem;
 }
 
 img.wikileaks-img {
-    margin-left: auto;
-    margin-right: auto;
-    width: 10rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10rem;
 }
 
 img#njalla {
-    background-color: #01051F;
-    padding: 1rem;
+  background-color: #01051f;
+  padding: 1rem;
 }
 
 p.text-lead {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
-#post-page img.img-lead, #post-page p.text-lead {
-    display: none;
+#post-page img.img-lead,
+#post-page p.text-lead {
+  display: none;
 }
 
 img.gratuitas {
-    width: 10rem;
+  width: 10rem;
 }
 
 img.localmonero {
-    width: 10rem;
-    margin-bottom: -1rem;
+  width: 10rem;
+  margin-bottom: -1rem;
 }
 
 .sponsors {
-	box-sizing: border-box;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-flex: 0;
-	-ms-flex: 0 1 auto;
-	flex: 0 1 auto;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: row;
-	flex-direction: row;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    text-align: center;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .sponsor {
-    box-sizing: border-box;
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 auto;
-    flex: 0 0 auto;
-    flex-basis: auto;
-    @media (max-width: 520px) {
-        -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-        max-width: 100%;
-    }
+  box-sizing: border-box;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  flex-basis: auto;
+  @media (max-width: 520px) {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
 }
 
 img.dvchain {
-    height: 9rem;
-    margin-left: 3rem;
-    @media (max-width: 520px) {
-        margin-left: auto;
-        margin-top: 1rem;
-        height: auto;
-        width: 13rem;
-    }
+  height: 9rem;
+  margin-left: 3rem;
+  @media (max-width: 520px) {
+    margin-left: auto;
+    margin-top: 1rem;
+    height: auto;
+    width: 13rem;
+  }
 }
 
-// Periodical 
+// Periodical
 
 .revuo-classes a {
-    padding: 1rem 2rem;
-    width: 11rem;
+  padding: 1rem 2rem;
+  width: 11rem;
 }
 
 #weekly .revuo-classes a.wk {
-    background-color: #f0f0f0;
+  background-color: #f0f0f0;
 }
 
-#periodical .revuo-classes a.pd, #wrap.periodical .revuo-classes a.pd:active, #wrap.periodical .revuo-classes a.pd:focus {
-    background-color: #f0f0f0;
+#periodical .revuo-classes a.pd,
+#wrap.periodical .revuo-classes a.pd:active,
+#wrap.periodical .revuo-classes a.pd:focus {
+  background-color: #f0f0f0;
 }
 
 // Typography for Periodical
 
 .hted-head {
-    margin: 2.5rem 0 1.3334rem 0;
-    background: #d9dadb;
-    color: #222222;
-    width: 100%;
-    border-radius: 2px;
-    padding: 1em;
-    text-align: left;
+  margin: 2.5rem 0 1.3334rem 0;
+  background: #d9dadb;
+  color: #222222;
+  width: 100%;
+  border-radius: 2px;
+  padding: 1em;
+  text-align: left;
 }
 
 #post-page h2 {
-    line-height: 1.3;
+  line-height: 1.3;
 }
 
 .text-center {
-    text-align: center;
+  text-align: center;
 }
 
 .page-numbers-display {
-    display: inline-block;
-    margin-left: 1rem;
-    margin-right: 1rem;
+  display: inline-block;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
