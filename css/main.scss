@@ -142,6 +142,10 @@ a.icon img {
   color: var(--nav-bg-color);
 }
 
+#nav a.icon:hover {
+  background-color: transparent;
+}
+
 #nav-list::after {
   background-color: var(--nav-bg-hover-color);
 }
