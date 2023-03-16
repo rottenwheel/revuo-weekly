@@ -1,7 +1,7 @@
 # Site settings
 title: Revuo Monero
 description: "Weekly and Quarterly Monero Newsletter"
-url: "http://revuo-xmr.com"
+url: "https://revuo-xmr.com"
 
 # Build settings
 baseurl: / # Change this to your relative path (ex: /blog/), or leave just a /
