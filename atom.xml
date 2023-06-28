@@ -18,6 +18,7 @@ layout: null
  {% for post in site.posts limit: 10 %}
 
  <entry>
+   <enclosure href="https://revuo-xmr.com{{ page.image }}"<enclosure/>
    <title>{{ post.title }}</title>
    <link href="{{ site.url }}{{ post.url }}.html"/>
    <id>{{ site.url }}{{ post.id }}</id>
