@@ -18,11 +18,6 @@ layout: null
  {% for post in site.posts limit: 10 %}
 
  <entry>
-   {% assign post_image = post.image.path | default: post.image %}
-   {% if post_image %}
-   {% unless post_image contains "://" %}
-   {% assign post_image = post_image | absolute_url %}
-   {% endunless %}
    <media:thumbnail xmlns:media="https://revuo-xmr.com/atom.xml" url="{{ post_image | xml_escape }}" />
    <media:content medium="image" url="{{ post_image | xml_escape }}" xmlns:media="https://revuo-xmr.com/atom.xml" />
    <title>{{ post.title }}</title>
