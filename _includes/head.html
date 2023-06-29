@@ -15,14 +15,6 @@
 	<meta name="theme-color" content="#193e4c">
 	<meta name="apple-mobile-web-app-title" content="Revuo Monero">
 	<meta name="apple-mobile-web-app-status-bar-style" content="#193e4c">
-	
-    {% if page.path contains '_posts' %}
-    <link rel="canonical" href="{{ page.issuenumber | replace:'index.html','' | prepend: "https://revuo-xmr.com/" }}" />
-    {%elsif page.periodical == "yes"%}
-    <link rel="canonical" href="{{ page.issuenumber | replace:'index.html','' | prepend: "https://revuo-xmr.com/periodicals/" }}" />
-    {%else%}
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: "https://revuo-xmr.com/" }}" />
-    {%endif%}
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:title" content="{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
 	<meta name="twitter:image" content="{% if page.path contains '_posts' %}https://revuo-xmr.com{{ page.image }}{% else %}https://revuo-xmr.com/img/revuo-monero.png{% endif %}">
