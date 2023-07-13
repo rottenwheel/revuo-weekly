@@ -18,8 +18,7 @@ layout: null
  {% for post in site.posts limit: 10 %}
 
  <entry>
-   <media:thumbnail xmlns:media="https://revuo-xmr.com/atom.xml" url="{{ post_image | xml_escape }}" />
-   <media:content medium="image" url="{{ post_image | xml_escape }}" xmlns:media="https://revuo-xmr.com/atom.xml" />
+   <enclosure href="https://revuo-xmr.com{{ page.image }}" />
    <title>{{ post.title }}</title>
    <link href="{{ site.url }}{{ post.url }}.html"/>
    <id>{{ site.url }}{{ post.id }}</id>
