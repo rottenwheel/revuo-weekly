@@ -23,4 +23,4 @@ Now run the following commands:
 If you open your web browser at `http://127.0.0.1:4000/`, you should see Revuo up and running.
 
 ## License
-Emerald is released under [MIT License](license.md).
+Revuo Monero is released under [MIT License](license.md).
