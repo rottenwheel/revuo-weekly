@@ -5,9 +5,10 @@ Revuo Monero is a weekly newsletter where you can find find the most recent Mone
 [Emerald](https://github.com/KingFelix/emerald/) is the theme used by Revuo. It is a minimal and mobile-first blog theme for Jekyll.
 
 ## Setup & usage
-To set up the latest Revuo, you have to follow the steps below: 
 
-Install ruby from [here](https://www.ruby-lang.org/en/)
+To set up Revuo, you have to follow the steps below: 
+
+Install ruby from [here](https://www.ruby-lang.org/en/).
 
 Now run the following commands:
 
