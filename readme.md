@@ -1,6 +1,6 @@
 ## Revuo Monero
 
-Revuo Monero is a weekly newsletter where you can find find the most recent Monero news.
+Revuo Monero is a weekly newsletter where you can find the most recent Monero news.
 
 [Emerald](https://github.com/KingFelix/emerald/) is the theme used by Revuo. It is a minimal and mobile-first blog theme for Jekyll.
 
