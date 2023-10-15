@@ -53,17 +53,31 @@
 	--menu-color: #e1e1e1;
 	--license-color: #666666;
 }
-// Was entered incorrectly.. Dark = Light
-[data-theme="dark"] {
-    --primary-color: #666666;
-    --secondary-color: #555555;
-    --font-color: #555555;
-    --link-color: #444444;
-    --bg-color: #f0f0f0;
-    --heading-color: #666666;
-    --block-bg-color: #d7d7d7;
-    --block-bg-color-secondary: #c0c0c0;
-    --block-bg-color-heading: #a5a5a5;
+
+.nojs-toggle {
+  display: none;
+}
+
+// BEGIN theme switcher
+#main-theme-switcher {
+  left: 25px;
+  top: 35px;
+  z-index: 999;
+  display: block !important;
+  position: absolute !important;
+  transition: all .3s ease;
+}
+
+#theme-switcher:checked ~ * {
+  --primary-color: #666666;
+  --secondary-color: #555555;
+  --font-color: #555555;
+  --link-color: #444444;
+  --bg-color: #f0f0f0;
+  --heading-color: #666666;
+  --block-bg-color: #d7d7d7;
+  --block-bg-color-secondary: #c0c0c0;
+  --block-bg-color-heading: #a5a5a5;
 	--table-color: #000000;
 	--head-nav-bg-color: transparent;
 	--head-nav-text-color: #d56f2a;
@@ -71,14 +85,67 @@
 	--license-color: #666666;
 }
 
-body {
-    background-color: var(--bg-color);
-    color: var(--font-color);
+#theme-switcher:checked ~ .switch .slider {
+  background-color: #d56f2a;
 }
 
-html {
-    background-color: var(--bg-color);
-    color: var(--font-color);
+#theme-switcher:checked ~ .switch .slider::before {
+  -webkit-transform: translateX(26px);
+  -moz-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+@media (max-width: 480px) {
+  #main-theme-switcher {
+    top: 19px;
+    right: 10px;
+  }
+}
+// END theme switcher
+
+// BEGIN menu toggle
+#menu-toggle:checked ~ #nav {
+  -webkit-transform: translateX(-14rem);
+  -moz-transform: translateX(-14rem);
+  -ms-transform: translateX(-14rem);
+  transform: translateX(-14rem);
+  width: 100%;
+}
+
+#menu-toggle:checked ~ .menu-toggle #menu {
+  background: none;
+  transition: all 0.1s ease-in;
+}
+
+#menu-toggle:checked ~ .menu-toggle #menu::before {
+  top: 0;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  background-color: #0F0F0F;
+}
+
+#menu-toggle:checked ~ .menu-toggle #menu::after {
+  top: -4px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: #0F0F0F;
+}
+
+@media (min-width: 940px) {
+  #menu-toggle:checked ~ #nav {
+    width: 30%;
+  }
+}
+// END menu toggle
+
+#wrap {
+  background-color: var(--bg-color);
+  color: var(--font-color);
 }
 
 h1 {

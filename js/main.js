@@ -1,82 +1,14 @@
-var normal = document.getElementById("nav-menu");
-var reverse = document.getElementById("nav-menu-left");
+// Saves themes in-between pages to LocalStorage.
+const themeSwitcher = document.getElementById('theme-switcher');
 
-var icon = normal !== null ? normal : reverse;
-
-
-const toggleSwitches = document.querySelectorAll('.switch input[type="checkbox"]');
-const currentTheme = localStorage.getItem('theme');
-
-if (currentTheme) {
-	document.documentElement.setAttribute('data-theme', currentTheme);
- 
-	if (currentTheme === 'dark') {
-		toggleSwitches.forEach(s => s.checked = true);
-	} else {
-		toggleSwitches.forEach(s => s.checked = false);
-	}
-}
-
-function switchTheme(e) {
-	if (e.target.checked) {
-		document.documentElement.setAttribute('data-theme', 'dark');
-		localStorage.setItem('theme', 'dark');
-		toggleSwitches.forEach(s => s.checked = true);
-	} else {
-		document.documentElement.setAttribute('data-theme', 'light');
-		localStorage.setItem('theme', 'light');
-		toggleSwitches.forEach(s => s.checked = false);
-	}
-}
-
-toggleSwitches.forEach((s) => s.addEventListener('change', switchTheme, false));
-
-
-
-//const currentTheme = localStorage.getItem("theme");
-//const btn = document.querySelector("switch");
-//const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-
-// Toggle the "menu-open" % "menu-opn-left" classes
-function toggle() {
-	  var navRight = document.getElementById("nav");
-	  var navLeft = document.getElementById("nav-left");
-	  var nav = navRight !== null ? navRight : navLeft;
-
-	  var button = document.getElementById("menu");
-	  var site = document.getElementById("wrap");
-	  
-	  if (nav.className == "menu-open" || nav.className == "menu-open-left") {
-	  	  nav.className = "";
-	  	  button.className = "";
-	  	  site.className = "";
-	  } else if (reverse !== null) {
-	  	  nav.className += "menu-open-left";
-	  	  button.className += "btn-close";
-	  	  site.className += "fixed";
-	  } else {
-	  	  nav.className += "menu-open";
-	  	  button.className += "btn-close";
-	  	  site.className += "fixed";
-	    }
-	}
+const setTheme = e => localStorage.setItem('theme', e.target.checked ? 'dark' : 'light');
+const checkTheme = () => themeSwitcher.checked = localStorage.getItem('theme') === 'dark';
 
 // Ensures backward compatibility with IE old versions
-function menuClick() {
-	if (document.addEventListener && icon !== null) {
-		icon.addEventListener('click', toggle);
-	} else if (document.attachEvent && icon !== null) {
-		icon.attachEvent('onclick', toggle);
-	} else {
-		return;
-	}
+if (document.addEventListener) {
+	themeSwitcher.addEventListener('click', setTheme);
+} else if (document.attachEvent) {
+	themeSwitcher.attachEvent('onclick', setTheme);
 }
 
-//function toggledark(checkbox) {
-  //var elementb = document.body;
-  //var elementh = document.html;
-  //elementh.classList.toggle("dark-theme");
-  //elementb.classList.toggle("dark-theme");
-//}
-
-menuClick();
+checkTheme()
