@@ -37,8 +37,8 @@ p.table-title {
   border-radius: 2px;
   overflow: hidden;
   border-spacing: 0;
+  background-color: var(--block-bg-color);
   @media (min-width: $breakpoint-alpha) {
-    background-color: var(--block-bg-color);
     color: #45494f;
     tr.row3 {
       background-color: var(--blog-bg-color-secondary);
@@ -104,7 +104,7 @@ p.table-title {
   }
     
   th, td:before {
-    color: #fff;
+    color: var(--link-color);
   }
     
   td.green {
