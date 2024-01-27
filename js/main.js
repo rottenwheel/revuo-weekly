@@ -67,12 +67,20 @@ if (document.body.clientWidth < 940) {
 		]
 	]
 
-	// Switch the theme when the theme switcher is clicked.
-	themeSwitcher.addEventListener('change', () => {
+	const checkMobileTheme = () => {
 		const theme = themeVariables[themeSwitcher.checked ? 1 : 0];
 
 		theme.forEach(variable => {
 			document.documentElement.style.setProperty(`--${variable.name}`, variable.value);
 		});
-	});
+	};
+
+	// Ensure IE compatibility
+	if (document.addEventListener) {
+		themeSwitcher.addEventListener('change', checkMobileTheme);
+	} else if (document.attachEvent) {
+		themeSwitcher.attachEvent('onchange', checkMobileTheme);
+	}
+
+	checkMobileTheme();
 }
