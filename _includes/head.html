@@ -17,13 +17,13 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="#193e4c">
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:title" content="{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-	<meta name="twitter:image" content="{% if page.path contains '_posts' %}https://revuo-xmr.com{{ page.image }}{% else %}https://revuo-xmr.com/img/revuo-monero.png{% endif %}">
+	<meta name="twitter:image" content="{% if page.path contains '_posts' %}{{ site.baseurl }}{{ page.image }}{% else %}{{ site.baseurl }}/img/revuo-monero.png{% endif %}">
 	<meta property="og:site_name" content="{{ site.title }}" />
 	<meta property="og:title" content="{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
-	<meta property="og:image" content="{% if page.path contains '_posts' %}https://revuo-xmr.com{{ page.image }}{% else %}https://revuo-xmr.com/img/revuo-monero.png{% endif %}" />
+	<meta property="og:image" content="{% if page.path contains '_posts' %}{{ site.baseurl }}{{ page.image }}{% else %}{{ site.baseurl }}/img/revuo-monero.png{% endif %}" />
 	
 	<!-- CSS & fonts -->
-	<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl | replace: '//', '/' }}">
+	<link rel="stylesheet" href="/css/main.css">
 
 	<!-- RSS -->
 	<link href="/atom.xml" type="application/atom+xml" rel="alternate" title="ATOM Feed" />
