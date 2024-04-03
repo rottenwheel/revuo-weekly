@@ -6,8 +6,8 @@ layout: null
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>{{ site.title }}</title>
- <link href="{{ site.url }}/atom.xml" rel="self"/>
- <id>{{ site.url }}</id>
+ <link href="{{ site.baseurl }}/atom.xml" rel="self"/>
+ <id>{{ site.baseurl }}</id>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
  <author>
    <name>{{ site.author.name }}</name>
@@ -19,14 +19,14 @@ layout: null
 
  <entry>
    <title>{{ post.title }}</title>
-   <link href="{{ site.url }}{{ post.url }}.html"/>
-   <id>{{ site.url }}{{ post.id }}</id>
+   <link href="{{ site.baseurl }}{{ post.url }}.html"/>
+   <id>{{ site.baseurl }}{{ post.id }}</id>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
    <content type="html">{{ post.content | xml_escape | truncatewords:50 }}</content>
    {% assign post_image = post.image.path | default: post.image %}
    {% if post_image %}
    {% unless post_image contains "://" %}
-   {% assign post_image = post_image | absolute_url %}
+   {% assign post_image = post_image | prepend: site.baseurl %}
    {% endunless %}
    <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="{{ post_image | xml_escape }}" />
    <media:content medium="image" url="{{ post_image | xml_escape }}" xmlns:media="http://search.yahoo.com/mrss/" />
