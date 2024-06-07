@@ -20,7 +20,7 @@ checkTheme()
 // Make the theme switcher in the hamburger menu on mobile devices work.
 if (document.body.clientWidth < 940) {
 	const themeSwitcherLabel = document.getElementById('main-theme-switcher');
-	const navActionsContainer = document.getElementById('nav-actions-container');
+	const navActionsContainer = document.getElementById('nav-actions-flex-container');
 
 	// Move the theme switcher to inside the hamburger menu.
 	navActionsContainer.appendChild(themeSwitcher);

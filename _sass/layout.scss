@@ -52,33 +52,40 @@ body {
 
 #nav-list {
 
-  .nav-actions {
+  .nav-actions-flex {
     /* Will turn to flex on mobile */
     display: none;
+  }
+
+  .nav-actions-static {
+    /* always display in the burger menu */
+    display: flex;
+  }
+
+  .nav-actions-flex,
+  .nav-actions-static {
     gap: 12px;
     justify-content: center;
     align-items: center;
 
-    .icon {
-      padding: 0;
 
-      >img {
-        margin-bottom: 0;
-      }
+    .icon>img {
+      margin-bottom: 0;
     }
   }
-
-
-  /* Separator after menu */
-  &:after {
-    display: block;
-    content: '';
-    width: 5rem;
-    height: 1px;
-    margin: 23px auto;
-    background-color: $background-color;
-  }
 }
+
+
+/* Separator after menu */
+&:after {
+  display: block;
+  content: '';
+  width: 5rem;
+  height: 1px;
+  margin: 23px auto;
+  background-color: $background-color;
+}
+
 
 /* Icon menu */
 

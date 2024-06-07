@@ -110,6 +110,18 @@
   #menu-toggle:checked~#nav {
     width: 30%;
   }
+
+  #header {
+    .action-container {
+      display: none !important;
+    }
+  }
+
+  #nav-list {
+    .nav-actions-flex {
+      display: flex;
+    }
+  }
 }
 
 // END menu toggle
