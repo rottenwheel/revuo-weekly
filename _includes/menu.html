@@ -1,9 +1,15 @@
 <nav {% if site.reverse == true %}id="nav-left"{% else %}id="nav"{% endif %}>
 	<div id="nav-list">
-		<div id="nav-actions-container" class="nav-actions">
-			<a class="icon" href="https://revuo-xmr.com/support/" target="_blank"><img src="/img/donate.png" alt="Donate" title="Donate" /></a>
-			<a class="icon" href="/atom.xml" target="_blank"><img src="/img/rss_1.png" alt="ATOM Feed" title="ATOM Feed" /></a>
-		</div>
+    <div class="nav-actions">
+		  <div id="nav-actions-flex-container" class="nav-actions-flex">
+			  <a class="icon" href="https://revuo-xmr.com/support/" target="_blank"><img src="/img/donate.png" alt="Donate" title="Donate" /></a>
+			  <a class="icon" href="/atom.xml" target="_blank"><img src="/img/rss_1.png" alt="ATOM Feed" title="ATOM Feed" /></a>
+		  </div>
+		  <div id="nav-actions-static-container" class="nav-actions-static">
+			  <a class="icon" href="https://primal.net/p/npub1tn8spk9zhxrctg2qym3gj8r7eq2wk6z3phrl8304wc54vt9qam4qvzw6jx" target="_blank"><img src="/img/nostr-icon.png" alt="Nostr" title="Nostr" /></a>
+			  <a class="icon" href="https://xcancel.com/revuoxmr" target="_blank"><img src="/img/xcom-icon.png" alt="x.com" title="x.com" /></a>
+		  </div>
+    </div>
 		<a href="{{ site.baseurl }}">Revuo Weekly</a>
 
 		<!-- Nav pages -->

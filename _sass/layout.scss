@@ -52,12 +52,20 @@ body {
 
 #nav-list {
 
-  .nav-actions {
-    /* Will turn to flex on mobile */
-    display: none;
+  .nav-actions-static {
+    position: absolute;
+    right: 1px;
+    left: 1px;
+    bottom: 1%;
+  }
+
+  .nav-actions-static,
+  .nav-actions-flex {
     gap: 12px;
     justify-content: center;
     align-items: center;
+    /* only *-flex will be overritten if the screen is small */
+    display: flex;
 
     .icon {
       padding: 0;
@@ -67,7 +75,6 @@ body {
       }
     }
   }
-
 
   /* Separator after menu */
   &:after {
@@ -79,6 +86,8 @@ body {
     background-color: $background-color;
   }
 }
+
+
 
 /* Icon menu */
 

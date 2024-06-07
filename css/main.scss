@@ -3,7 +3,7 @@
 ---
 
 //Import
-@import "base", "mixin", "typography", "layout", "syntax.scss", "custom.scss", "responsive.scss";
+@import "base", "mixin", "typography", "layout", "syntax.scss", "custom.scss";
 
 // Default Style (Dark)
 :root {
@@ -110,6 +110,19 @@
   #menu-toggle:checked~#nav {
     width: 30%;
   }
+
+  /* Sets burger menu for small screens */
+  #header {
+    .action-container {
+      display: flex !important;
+    }
+  }
+
+  #nav-list {
+    .nav-actions-flex {
+      display: none !important;
+    }
+  }
 }
 
 // END menu toggle
@@ -163,7 +176,7 @@ p.by-line-post {
   }
 
   align-items: center;
-  display: flex;
+  display: none;
   flex-direction: row;
   gap: 12px;
   height: 36px;
