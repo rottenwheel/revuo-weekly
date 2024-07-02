@@ -2,7 +2,7 @@
 
 Revuo Monero is a weekly newsletter where you can find the most recent Monero news.
 
-[Emerald](https://github.com/rottenwheel/revuo-monero-theme/) is the theme used by Revuo. It is a minimal and mobile-first blog theme, originally for Jekyll, ported to Hugo by [recanman](https://github.com/recanman).
+[Emerald](https://github.com/rottenwheel/revuoxmrtheme) is the theme used by Revuo. It is a minimal and mobile-first blog theme, originally for Jekyll, ported to Hugo by [recanman](https://github.com/recanman).
 
 ## Setup & usage
 
