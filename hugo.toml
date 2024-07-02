@@ -1,0 +1,66 @@
+baseURL = 'https://revuo-xmr.com/'
+languageCode = 'en-us'
+title = 'Revuo Monero'
+description = 'Weekly and Quarterly Monero Newsletter'
+disablePathToLower = true
+canonifyURLs = true
+enableRobotsTXT = true
+theme = 'revuo-xmr'
+
+[sitemap]
+    changefreq = "weekly"
+    priority = 0.5
+
+[imaging]
+quality = 50
+
+[params]
+dateFormat = "02 Jan 2006"
+
+nav_links = [
+	{ title = "Revuo Weekly", link = "/" },
+	{ title = "Revuo Periodical", link = "/periodicals" },
+	{ title = "Source Code & Licenses", link = "/source" },
+	{ title = "Support Revuo", link = "/support" }
+]
+
+right_icons = [
+	{ title = "Support", link = "/support", external = false, icon = "donate.png", icon_alt = "Donate" },
+	{ title = "ATOM Feed", link = "/atom.xml", external = true, icon = "rss_1.png", icon_alt = "ATOM Feed" },
+]
+
+mirrors = [
+	{ title = "Onion", link = "http://revuo75joezkbeitqmas4ab6spbrkr4vzbhjmeuv75ovrfqfp47mtjid.onion/", icon = "tor.png", icon_alt = "Tor" },
+	{ title = "I2P", link = "http://qve7i3ke5h2mbbyphd7agmh5awzcwulvrvghjvhndkagdbi4mkcq.b32.i2p/", icon = "itoopie.png", icon_alt = "I2P" },
+]
+
+bottom_nav_icons = [
+	{ title = "Nostr", link = "https://primal.net/p/npub1tn8spk9zhxrctg2qym3gj8r7eq2wk6z3phrl8304wc54vt9qam4qvzw6jx", icon = "nostr-icon.png", icon_alt = "Nostr" },
+	{ title = "x.com", link = "https://xcancel.com/revuoxmr", icon="xcom-icon.png", icon_alt = "x.com" },
+	{ title = "XMPP MUC", link = "xmpp:revuo-monero@conference.jabbers.one?join", icon = "xmpp.png", icon_alt = "XMPP MUC" },
+	{ title = "Matrix Room", link = "https://matrix.to/#/#revuo:monero.social", icon = "matrix.png", icon_alt = "Matrix Room" },
+]
+
+[params.author]
+name = "rottenwheel"
+monero_address = "89Esx7ZAoVcD9wiDw57gxgS7m52sFEEbQiFC4qq18YZy3CdcsXvJ67FYdcDFbmYEGK7xerxgmDptd1C2xLstCbgF3RUhSMT"
+monero_qr = "img/qr.jpg"
+
+[params.logo]
+icon = "revuo-monero-logo.png"
+icon_alt = "Revuo Monero Logo"
+
+[params.nav_footer]
+title = "Monero Website"
+link = "https://www.getmonero.org/"
+
+[params.sponsor]
+introduction = "Infrastructure sponsored by"
+link = "https://www.digilol.net"
+icon = "digilol.png"
+icon_alt = "Digilol"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
