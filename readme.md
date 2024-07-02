@@ -14,11 +14,7 @@ Install Hugo (using a package manager or from [here](https://gohugo.io/getting-s
 
 Now run the following commands:
 
-`git clone https://
-
-`gem install bundler jekyll` | Installs jekyll and bundler.
-
-`git clone https://github.com/rottenwheel/revuo-weekly` | Clone the repository.
+`git clone https://github.com/rottenwheel/revuo-weekly --recurse-submodules` | Clone the repository.
 
 `cd revuo-weekly`
 
