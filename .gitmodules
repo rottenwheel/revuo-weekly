@@ -1,0 +1,3 @@
+[submodule "themes/revuo-xmr"]
+	path = themes/revuo-xmr
+	url = https://github.com/rottenwheel/revuoxmrtheme
