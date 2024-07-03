@@ -3,7 +3,7 @@ type: weekly
 layout: weekly_old
 date: "2021-01-12T00:00:00Z"
 issuenumber: 89
-title: "Issue 89; January 4 - 12, 2021"
+title: "Issue 89: January 4 - 12, 2021"
 ---
 <h3>Table of Contents:</h3>
 <ul class="contents">

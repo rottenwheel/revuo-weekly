@@ -3,7 +3,7 @@ type: weekly
 layout: weekly_old
 date: "2022-04-07T00:00:00Z"
 issuenumber: 115
-title: "Issue 115; March 31 - April 07, 2022"
+title: "Issue 115: March 31 - April 07, 2022"
 ---
 
 <h3>Table of Contents:</h3>

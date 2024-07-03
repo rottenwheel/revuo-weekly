@@ -3,7 +3,7 @@ type: weekly
 layout: weekly_old
 date: "2021-05-02T00:00:00Z"
 issuenumber: 98
-title: "Issue 98; April 25 - May 2, 2021"
+title: "Issue 98: April 25 - May 2, 2021"
 ---
     <li><a href="#news">Recent News</a></li>
 <h3>Table of Contents:</h3>
