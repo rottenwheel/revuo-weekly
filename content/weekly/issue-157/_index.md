@@ -3,7 +3,7 @@ type: weekly
 layout: weekly_old
 date: "2023-02-02T00:00:00Z"
 issuenumber: 157
-title: "Issue 157; January 26 - February 2, 2023"
+title: "Issue 157: January 26 - February 2, 2023"
 ---
 
 <h3>Table of Contents:</h3>

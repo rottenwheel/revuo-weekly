@@ -3,7 +3,7 @@ type: weekly
 layout: weekly_old
 date: "2020-04-24T00:00:00Z"
 issuenumber: 57
-title: "Issue 57; April 17 - April 24, 2020"
+title: "Issue 57: April 17 - April 24, 2020"
 ---
 
 <h3>Table of Contents:</h3>
