@@ -60,15 +60,15 @@ Research Lab Meeting - [#monero-research-lab](irc://irc.libera.chat/#monero-rese
 
 Below you can find some CCS proposal ideas open for discussion.
 
-{{% ccs_item link="rehrar-help-out" author="rehrar" %}}
+{{% ccs_item link="https://repo.getmonero.org/monero-project/ccs-proposals/-/merge_requests/470" author="rehrar" %}}
 help out the project
 {{% /ccs_item %}}
 
-{{% ccs_item link="VOSTOEMISIO-Revamp-Introductory-Video" author="VOSTOEMISIO" %}}
+{{% ccs_item link="https://repo.getmonero.org/monero-project/ccs-proposals/-/merge_requests/473" author="VOSTOEMISIO" %}}
 Remake Introductory "What Is Monero?" Video
 {{% /ccs_item %}}
 
-{{% ccs_item link="ki9-pago-payment-gateway" author="ki9" %}}
+{{% ccs_item link="https://repo.getmonero.org/monero-project/ccs-proposals/-/merge_requests/475" author="ki9" %}}
 Pago Payment Processor
 {{% /ccs_item %}}
 
@@ -76,7 +76,7 @@ Find more [here](https://ccs.getmonero.org/ideas/). Posting comments in favor of
 
 ### CCS Proposals Need Funding
 
-{{% ccs_item link="boog_3_months_cuprate_2" author="Boog900" goal=215 raised=0 %}}
+{{% ccs_item link="https://ccs.getmonero.org/proposals/boog_3_months_cuprate_2.html" author="Boog900" goal=215 raised=0 %}}
 full time work on Cuprate (3 months)
 {{% /ccs_item %}}
 
