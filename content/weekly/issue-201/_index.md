@@ -91,7 +91,7 @@ full time work on Cuprate (3 months)
 	avg_txs_per_day="35.87"
 	block_reward="0.6"
 
-	date="January 1, 2024"
+	date="July 4, 2024"
 >}}
 
 ###### XMR Blocks Distribution in last 1000 blocks
@@ -109,7 +109,7 @@ full time work on Cuprate (3 months)
 	price_eur="143.66,-7.1,-2.1,-5.6"
 	price_btc="0.002729,+1.0,+20.1,-49.5"
 
-	date="June 6, 2024"
+	date="July 4, 2024"
 >}}
 
 ###### XMR Price Graph
