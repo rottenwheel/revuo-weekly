@@ -64,7 +64,7 @@ Below you can find some CCS proposal ideas open for discussion.
 help out the project
 {{% /ccs_item %}}
 
-{{% ccs_item link="https://repo.getmonero.org/monero-project/ccs-proposals/-/merge_requests/473" %}}
+{{% ccs_item link="https://repo.getmonero.org/monero-project/ccs-proposals/-/merge_requests/473" author="VOSTOEMISIO" %}}
 Remake Introductory "What Is Monero?" Video
 {{% /ccs_item %}}
 
