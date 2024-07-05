@@ -76,7 +76,7 @@ Find more [here](https://ccs.getmonero.org/ideas/). Posting comments in favor of
 
 ### CCS Proposals Need Funding
 
-{{% ccs_item link="boog_3_months_cuprate_2" author="Boog900" goal=215 raised=0 %}}
+{{% ccs_item link="https://ccs.getmonero.org/proposals/boog_3_months_cuprate_2.html" author="Boog900" goal=215 raised=0 %}}
 full time work on Cuprate (3 months)
 {{% /ccs_item %}}
 
