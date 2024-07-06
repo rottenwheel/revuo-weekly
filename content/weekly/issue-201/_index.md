@@ -40,7 +40,7 @@ Monero Talk had anarchist Sterlin Lujan and XMR legend, Matt Roach, live at Porc
 
 ### Upcoming Events
 
-{{% event "July 6, 2024 (Monday) - 15:00 UTC" %}}
+{{% event "July 6, 2024 (Saturday) - 15:00 UTC" %}}
 Community Workgroup Meeting - [#monero-community](irc://irc.libera.chat/#monero-community) IRC channel; Matrix [room](https://matrix.to/#/#monero-community:monero.social).
 {{% /event %}}
 
@@ -48,11 +48,11 @@ Community Workgroup Meeting - [#monero-community](irc://irc.libera.chat/#monero-
 Seraphis Wallet Workgroup Meeting - [#no-wallet-left-behind](irc://irc.libera.chat/#no-wallet-left-behind) IRC channel; Matrix [room](https://matrix.to/#/#no-wallet-left-behind:monero.social).
 {{% /event %}}
 
-{{% event "July 9, 2024 (Monday) - 18:00 UTC" %}}
+{{% event "July 9, 2024 (Tuesday) - 18:00 UTC" %}}
 Cuprate Workgroup Meeting - [#cuprate](irc://irc.libera.chat/#cuprate) IRC channel; Matrix [room](https://matrix.to/#/#cuprate:monero.social).
 {{% /event %}}
 
-{{% event "July 10, 2024 (Monday) - 18:00 UTC" %}}
+{{% event "July 10, 2024 (Wednesday) - 18:00 UTC" %}}
 Research Lab Meeting - [#monero-research-lab](irc://irc.libera.chat/#monero-research-lab) IRC channel; Matrix [room](https://matrix.to/#/#monero-research-lab:monero.social).
 {{% /event %}}
 
