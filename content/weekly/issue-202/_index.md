@@ -79,8 +79,8 @@ None; all funded for now.
 ###### Blockchain Stats
 
 {{< bc_stats
-	height="0"
-	hashrate="0 GH/s"
+	height="3190760"
+	hashrate="2.36 GH/s"
 	txs_per_block="35.63"
 	avg_txs_per_day="27054"
 	block_reward="0.6"
@@ -98,7 +98,7 @@ None; all funded for now.
 	market_cap="2,918,903,189"
 	street_price="167.23"
 
-	table_date="06/13/24"
+	table_date="07/11/24"
 	price_usd="158.15,+0.1,-8.6,-4.4"
 	price_eur="145.46,-0.4,-9.7,-3.2"
 	price_btc="0.002755,+1.8,+7.2,-49"
