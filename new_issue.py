@@ -58,10 +58,12 @@ def create_issue(
         subprocess.CalledProcessError: If the Hugo command fails
         IOError: If any of the Python file operations fail
     """
+	# Use the Hugo CLI to create a new issue
     subprocess.run(
         ["hugo", "new", f"weekly/issue-{issue_number}/_index.md"], check=True
     )
 
+	# Read the content of the new file
     with open(f"content/weekly/issue-{issue_number}/_index.md", "r") as f:
         content = f.read()
 
@@ -76,6 +78,7 @@ def create_issue(
 
     content = "\n".join(lines)
 
+	# Overwrite the file with the new content
     with open(f"content/weekly/issue-{issue_number}/_index.md", "w") as f:
         f.write(content)
 
