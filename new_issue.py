@@ -74,7 +74,7 @@ def create_issue(
 
     for i, line in enumerate(lines):
         if line.startswith("title:"):
-            lines[i] = f"title: Issue {issue_number} - {period_string}"
+            lines[i] = f'title: "Issue {issue_number}: {period_string}"'
 
     content = "\n".join(lines)
 
