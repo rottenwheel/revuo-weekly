@@ -4,7 +4,7 @@ layout: weekly
 
 date: "2024-07-25T11:58:17-05:00"
 issuenumber: 204
-title: Issue 204 - July 18 - 25, 2024
+title: Issue 204: July 18 - 25, 2024
 ---
 
 ### Table of Contents:
