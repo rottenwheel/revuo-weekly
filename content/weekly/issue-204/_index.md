@@ -31,7 +31,7 @@ Haveno DEX [v1.0.9](https://github.com/haveno-dex/haveno/releases/tag/1.0.9) wit
 {{% /newsbyte %}}
 
 {{% newsbyte %}}
-**Exclusive**: Haveno DEX Mobile might be around the corner, as teased in this [tweet](https://nitter.poast.org/rottenwheel1/status/1812412616146297197) from last week's issue. The good news is that you may be able to test such stagenet build this weekend! Read more and stay tuned to this GitHub [repository](https://github.com/KewbitXMR/haveno-plus) for future .apk releases; iOS build not planned yet, unfortunately.
+*Exclusive*: Haveno DEX Mobile might be around the corner, as teased in this [tweet](https://nitter.poast.org/rottenwheel1/status/1812412616146297197) from last week's issue. The good news is that you may be able to test such stagenet build this weekend! Read more and stay tuned to this GitHub [repository](https://github.com/KewbitXMR/haveno-plus) for future .apk releases; iOS build not planned yet, unfortunately.
 {{% /newsbyte %}}
 
 {{% newsbyte %}}
