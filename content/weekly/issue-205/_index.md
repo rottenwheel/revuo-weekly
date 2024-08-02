@@ -110,7 +110,7 @@ None; all funded for now. [Support](https://www.revuo-xmr.com/support/) Revuo.
 	market_cap="2,997,027,637"
 	street_price="160.40"
 
-	table_date="08/01/24"
+	table_date="08/02/24"
 	price_usd="162.44,-0.01,-2.08,+1.88"
 	price_eur="148.71,-0.61,-3.11,+1.91"
 	price_btc="0.00257105,+6.87,-6.68,-52.77"
