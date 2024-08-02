@@ -84,9 +84,7 @@ Find more [here](https://ccs.getmonero.org/ideas/). Posting comments in favor of
 
 ### CCS Proposals Need Funding
 
-{{% ccs_item link="jeffro256-full-time-2024Q3" author="jeffro256" goal=146 raised=30.04 %}}
-full-time development 2024Q3
-{{% /ccs_item %}}
+None; all funded for now. [Support](https://www.revuo-xmr.com/support/) Revuo.
 
 ### Price & Blockchain Stats {#stats}
 
