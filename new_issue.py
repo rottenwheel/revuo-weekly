@@ -107,7 +107,7 @@ def create_issue_image(
     period_string = get_period_string(period_start, period_end)
 
     cover_template = cover_template.replace("__SITE__", site_title)
-    cover_template = cover_template.replace("__TITLE__", f"Issue {issue_number}")
+    cover_template = cover_template.replace("__TITLE__", f"ISSUE {issue_number}")
     cover_template = cover_template.replace("__DATE__", period_string)
 
     with tempfile.TemporaryDirectory() as tempdir:

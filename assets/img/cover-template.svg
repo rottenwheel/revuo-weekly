@@ -7,7 +7,7 @@
    width="2560"
    height="1280"
    viewBox="0 0 2560 1280"
-   sodipodi:docname="8fcxhv.svg"
+   sodipodi:docname="cover-template.svg"
    inkscape:version="1.3.2 (091e20ef0f, 2023-11-25, custom)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -4447,15 +4447,15 @@
     <text
        id="text619"
        xml:space="preserve"
-       transform="translate(0,781.6484)"
        style="letter-spacing:15px"
-       x="50%"
-       text-anchor="middle"><tspan
+       x="1280"
+       text-anchor="middle"
+       y="725.64838"><tspan
          style="font-variant:normal;font-weight:100;font-stretch:normal;font-size:250px;font-family:'DM Sans';letter-spacing:15px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
          sodipodi:role="line"
          id="tspan619"
          x="1287.5"
-         y="0">__TITLE__</tspan></text>
+         y="725.64838">__TITLE__</tspan></text>
     <text
        id="text620"
        xml:space="preserve"
