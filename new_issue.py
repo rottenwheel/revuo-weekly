@@ -174,4 +174,4 @@ if __name__ == "__main__":
         new_issue = int(latest_issue) + 1
 
     create_issue(new_issue, period_start, period_end)
-    create_issue_image(hugo_config["title"], new_issue, period_start, period_end)
+    create_issue_image("Revuo Weekly", new_issue, period_start, period_end)
