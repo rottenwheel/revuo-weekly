@@ -19,7 +19,7 @@ title: "Issue 206: August 01 - 08, 2024"
 ### Recent News {#news}
 
 {{% newsbyte %}}
-Haveno DEX [v1.0.10](https://github.com/haveno-dex/haveno/releases/tag/1.0.10) with Tor's Proof-of-Work DDoS defensive implementation (RandomX, is that you?). *Note*: To mitigate the ongoing denial of service attack, please apply proof of work defense to your seed nodes if you run any: [Seed nodes with Proof of Work (PoW)](https://github.com/haveno-dex/haveno/blob/master/docs/deployment-guide.md#seed-nodes-with-proof-of-work-pow); a slew of other bug fixes and stability improvements, check release notes for further information. Haveno Reto will release v1.0.10 binaries on Sunday or early next week as one administrator is currently on vacation.
+Haveno DEX [v1.0.10](https://github.com/haveno-dex/haveno/releases/tag/1.0.10) with Tor's Proof-of-Work DDoS defensive implementation (RandomX, is that you?) *Note*: To mitigate the ongoing denial of service attack, please apply proof of work defense to your seed nodes if you run any: [Seed nodes with Proof of Work (PoW)](https://github.com/haveno-dex/haveno/blob/master/docs/deployment-guide.md#seed-nodes-with-proof-of-work-pow); a slew of other bug fixes and stability improvements, check release notes for further information. Haveno Reto will release v1.0.10 binaries on Sunday or early next week as one administrator is currently on vacation.
 {{% /newsbyte %}}
 
 {{% newsbyte %}}
