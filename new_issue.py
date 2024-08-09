@@ -26,11 +26,11 @@ def get_period_string(
     if period_start.year == period_end.year:
         if period_start.month == period_end.month:
             period_string = (
-                f"{period_start.strftime('%B %d')} - {period_end.strftime('%d')}"
+                f"{period_start.strftime('%B %-d')} - {period_end.strftime('%-d')}"
             )
         else:
             period_string = (
-                f"{period_start.strftime('%B %d')} - {period_end.strftime('%B %d')}"
+                f"{period_start.strftime('%B %-d')} - {period_end.strftime('%B %-d')}"
             )
 
         if year:
@@ -38,7 +38,7 @@ def get_period_string(
 
     else:
         period_string = (
-            f"{period_start.strftime('%B %d, %Y')} - {period_end.strftime('%B %d, %Y')}"
+            f"{period_start.strftime('%B %-d, %Y')} - {period_end.strftime('%B %-d, %Y')}"
         )
 
     return period_string
