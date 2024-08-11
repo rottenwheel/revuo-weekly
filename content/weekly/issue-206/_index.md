@@ -41,7 +41,7 @@ Community Workgroup Meeting - [#monero-community](irc://irc.libera.chat/#monero-
 {{% /event %}}
 
 {{% event "August 11, 2024 (Sunday) - 19:00 UTC" %}}
-Monero Website Workgroup Meeting - [#monero-community](irc://irc.libera.chat/#monero-community) IRC channel; Matrix [room](https://matrix.to/#/#monero-community:monero.social).
+Monero Website Workgroup Meeting - [#monero-site](irc://irc.libera.chat/#monero-site) IRC channel; Matrix [room](https://matrix.to/#/#monero-site:monero.social).
 {{% /event %}}
 
 {{% event "August 12, 2024 (Monday) - 18:00 UTC" %}}
