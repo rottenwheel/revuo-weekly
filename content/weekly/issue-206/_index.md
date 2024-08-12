@@ -45,7 +45,7 @@ Monero Website Workgroup Meeting - [#monero-site](irc://irc.libera.chat/#monero-
 {{% /event %}}
 
 {{% event "August 12, 2024 (Monday) - 18:00 UTC" %}}
-Dev Meeting - [#no-wallet-left-behind](irc://irc.libera.chat/#no-wallet-left-behind) IRC channel; Matrix [room](https://matrix.to/#/#no-wallet-left-behind:monero.social).
+Dev Meeting - [#monero-dev](irc://irc.libera.chat/#monero-dev) IRC channel; Matrix [room](https://matrix.to/#/#monero-dev:monero.social).
 {{% /event %}}
 
 {{% event "August 13, 2024 (Tuesday) - 18:00 UTC" %}}
