@@ -35,7 +35,7 @@ Feather Wallet [v2.6.8](https://featherwallet.org/download/), upgrading to Moner
 {{% /newsbyte %}}
 
 {{% newsbyte %}}
-XMRSigner [v0.9](https://github.com/DiosDelRayo/MoneroSigner/releases/tag/v0.9). XMRSigner milestone 3 update posted on [GitLab]. Have a [read](https://repo.getmonero.org/monero-project/ccs-proposals/-/merge_requests/465#note_25707).
+XMRSigner [v0.9](https://github.com/DiosDelRayo/MoneroSigner/releases/tag/v0.9). XMRSigner milestone 3 update posted on GitLab. Have a [read](https://repo.getmonero.org/monero-project/ccs-proposals/-/merge_requests/465#note_25707).
 {{% /newsbyte %}}
 
 {{% newsbyte %}}
