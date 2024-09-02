@@ -6,7 +6,7 @@ import argparse
 import datetime
 import tempfile
 import tomllib
-
+from PIL import Image
 
 def get_period_string(
     start: datetime.datetime,
@@ -124,6 +124,9 @@ def create_issue_image(
             ]
         )
 
+        image = Image.open(f"content/weekly/issue-{issue_number}/cover.png")
+        image = image.convert("RGB").quantize(colors=256)
+        image.save(f"content/weekly/issue-{issue_number}/cover.png", "PNG", compress_level=9)
 
 def get_latest_issue() -> int:
     """Get the latest issue number from the weekly directory
