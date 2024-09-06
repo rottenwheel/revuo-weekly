@@ -23,7 +23,7 @@ Monero contributor xmrack posted a Chainalysis video in the Monero Research Loun
 {{% /newsbyte %}}
 
 {{% newsbyte %}}
-Diego "rehrar" Salazar shared a sneak peek of his forthcoming [getmonero.org](https://www.getmonero.org/) design proposal in the Monero Website Workgroup Matrix [room](https://matrix.to/#/!pBnQQFvuFhLffbKZpY:haveno.network/$bQBRLS8yEEJY4g0VQ-J_tzCEVeRkpITjT01FUp0fx3k?via=cypherstack.com&via=matrix.org&via=monero.social). Direct [link](https://rimgo.hostux.net/K7Cb9cD.png) (Rimgo, Imgur privacy-frontend.) [Mirror](https://revuo-xmr.com/static/img/monero_design.png). Feedback welcome on Matrix/IRC/Reddit/Lemmy.
+Diego "rehrar" Salazar shared a sneak peek of his forthcoming [getmonero.org](https://www.getmonero.org/) design proposal in the Monero Website Workgroup Matrix [room](https://matrix.to/#/!pBnQQFvuFhLffbKZpY:haveno.network/$bQBRLS8yEEJY4g0VQ-J_tzCEVeRkpITjT01FUp0fx3k?via=cypherstack.com&via=matrix.org&via=monero.social). Direct [link](https://rimgo.hostux.net/K7Cb9cD.png) (Rimgo, Imgur privacy-frontend.) Revuo [mirror](https://revuo-xmr.com/static/img/rehrar_gm_design.png). Feedback welcome on Matrix/IRC/Reddit/Lemmy.
 {{% /newsbyte %}}
 
 {{% newsbyte %}}
