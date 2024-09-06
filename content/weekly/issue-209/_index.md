@@ -19,7 +19,7 @@ title: "Issue 209: August 29 - September 5, 2024"
 ### Recent News {#news}
 
 {{% newsbyte %}}
-Monero contributor xmrack posted a Chainalysis video in the Monero Research Lounge Matrix [room](https://matrix.to/#/!zxoYuvZdPYtIuWSQnn:monero.social/$wY1X8eEilFIZ-xJCC2IQsvlh7hKyZ_7t0eec_o3A18s?via=matrix.org&via=monero.social&via=xmr.mx). X [thread](https://xcancel.com/Thankful_fr_tdy/status/1830706777140117790#m). Direct link to video on Chainalysis website has been taken down. Temporary download link provided by Revuo [here](https://send.vis.ee/download/72a0b72ed6711a40/#EEzFHi_ymZeuuXSAOHEDZA); valid for 3 days only, or first 10 downloads, whichever occurs first. Couple quotes from the presentation shared in the Matrix room: “A lot of how we do our monero tracing is IP observation” - Chainalysis. "Fingerprinting wallet software seems to be one of their important heuristics besides RPC IP addresses." Discussion ongoing.
+Monero contributor xmrack posted a Chainalysis video in the Monero Research Lounge Matrix [room](https://matrix.to/#/!zxoYuvZdPYtIuWSQnn:monero.social/$wY1X8eEilFIZ-xJCC2IQsvlh7hKyZ_7t0eec_o3A18s?via=matrix.org&via=monero.social&via=xmr.mx). X [thread](https://xcancel.com/Thankful_fr_tdy/status/1830706777140117790#m). Direct link to video on Chainalysis website has been taken down. Watch and download link thanks to archive.org [here](https://archive.org/details/chainalysis_XMR). Couple quotes from the presentation shared in the Matrix room: “A lot of how we do our monero tracing is IP observation” - Chainalysis. "Fingerprinting wallet software seems to be one of their important heuristics besides RPC IP addresses." Discussion ongoing.
 {{% /newsbyte %}}
 
 {{% newsbyte %}}
