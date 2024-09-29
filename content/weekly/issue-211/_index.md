@@ -86,7 +86,7 @@ Robust and modular wallet-rpc library
 
 ### CCS Proposals Need Funding
 
-{{% ccs_item link="https://ccs.getmonero.org/proposals/VOSTOEMISIO-FCMP-Animated-Explainer.html" author="jeffro256" goal=33 raised=1.77 %}}
+{{% ccs_item link="https://ccs.getmonero.org/proposals/VOSTOEMISIO-FCMP-Animated-Explainer.html" author="VOSTOEMISIO" goal=33 raised=1.77 %}}
 FCMP Animated Explainer Video and Remake Introductory Video
 {{% /ccs_item %}}
 
@@ -94,7 +94,7 @@ FCMP Animated Explainer Video and Remake Introductory Video
 Revuo Monero maintenance (2024 Q4)
 {{% /ccs_item %}}
 
-{{% ccs_item link="https://ccs.getmonero.org/proposals/ccs-coordinator-5-plowsof.html" author="jeffro256" goal=99 raised=2.17 %}}
+{{% ccs_item link="https://ccs.getmonero.org/proposals/ccs-coordinator-5-plowsof.html" author="plowsof" goal=99 raised=2.17 %}}
 CCS Coordinator
 {{% /ccs_item %}}
 
