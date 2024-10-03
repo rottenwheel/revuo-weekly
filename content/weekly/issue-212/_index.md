@@ -55,6 +55,7 @@ Cuprate Workgroup Meeting - [#cuprate](irc://irc.libera.chat/#cuprate) IRC chann
 {{% event "October 9, 2024 (Wednesday) - 18:00 UTC" %}}
 Research Lab Meeting - [#monero-research-lab](irc://irc.libera.chat/#monero-research-lab) IRC channel; Matrix [room](https://matrix.to/#/#monero-research-lab:monero.social).
 {{% /event %}}
+
 ### CCS Proposal Ideas {#proposals}
 
 Below you can find some CCS proposal ideas open for discussion.
