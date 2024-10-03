@@ -1,0 +1,61 @@
+#!/bin/bash
+
+# Get the current date
+current_date=$(date +"%m/%d/%y")
+
+# Set the API endpoint and the coin ID
+API_ENDPOINT="https://api.coingecko.com/api/v3/coins/monero"
+QUERY_PARAMS="?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false&sparkline=false"
+
+# Fetch the data from the API
+response=$(curl -s --request GET \
+     --url "$API_ENDPOINT$QUERY_PARAMS" \
+     --header 'accept: application/json')
+
+# Extract the relevant data using jq
+usd_price=$(echo $response | jq -r '.market_data.current_price.usd' | awk '{printf("$%s\n", $1)}')
+eur_price=$(echo $response | jq -r '.market_data.current_price.eur' | awk '{printf("€%s\n", $1)}')
+btc_price=$(echo $response | jq -r '.market_data.current_price.btc' | awk '{printf("₿%s\n", $1)}')
+market_cap=$(echo $response | jq -r '.market_data.market_cap.usd' | xargs numfmt --g)
+street_price="$(curl -s --header 'accept: application/json' 'https://monero.boats/prices' \
+	| jq -r '.haveno.USD' | awk '{printf("$%.2f\n", $1)}')"
+week_change_usd=$(echo $response | jq -r '.market_data.price_change_percentage_7d_in_currency.usd' | awk '{printf("%.2f", $1)}')
+month_change_usd=$(echo $response | jq -r '.market_data.price_change_percentage_30d_in_currency.usd' | awk '{printf("%.2f", $1)}')
+year_change_usd=$(echo $response | jq -r '.market_data.price_change_percentage_1y_in_currency.usd' | awk '{printf("%.2f", $1)}')
+week_change_eur=$(echo $response | jq -r '.market_data.price_change_percentage_7d_in_currency.eur' | awk '{printf("%.2f", $1)}')
+month_change_eur=$(echo $response | jq -r '.market_data.price_change_percentage_30d_in_currency.eur' | awk '{printf("%.2f", $1)}')
+year_change_eur=$(echo $response | jq -r '.market_data.price_change_percentage_1y_in_currency.eur' | awk '{printf("%.2f", $1)}')
+week_change_btc=$(echo $response | jq -r '.market_data.price_change_percentage_7d_in_currency.btc' | awk '{printf("%.2f", $1)}')
+month_change_btc=$(echo $response | jq -r '.market_data.price_change_percentage_30d_in_currency.btc' | awk '{printf("%.2f", $1)}')
+year_change_btc=$(echo $response | jq -r '.market_data.price_change_percentage_1y_in_currency.btc' | awk '{printf("%.2f", $1)}')
+
+# Function to add + or - prefix based on value
+add_prefix() {
+    if (( $(echo "$1 < 0" | bc -l) )); then
+        echo "$1%"
+    else
+        echo "+$1%"
+    fi
+}
+
+# Format the price changes with + or - prefix
+week_change_usd=$(add_prefix $week_change_usd)
+month_change_usd=$(add_prefix $month_change_usd)
+year_change_usd=$(add_prefix $year_change_usd)
+week_change_eur=$(add_prefix $week_change_eur)
+month_change_eur=$(add_prefix $month_change_eur)
+year_change_eur=$(add_prefix $year_change_eur)
+week_change_btc=$(add_prefix $week_change_btc)
+month_change_btc=$(add_prefix $month_change_btc)
+year_change_btc=$(add_prefix $year_change_btc)
+
+# Print the markdown formatted output
+echo "# Price & Performance"
+echo "**Market Cap:** $market_cap"
+echo "**Street Price:** $street_price"
+echo "| Currency | Price | Week Change | Month Change | Year Change |"
+echo "|----------|-------|-------------|--------------|-------------|"
+echo "| USD | $usd_price | $week_change_usd | $month_change_usd | $year_change_usd |"
+echo "| EUR | $eur_price | $week_change_eur | $month_change_eur | $year_change_eur |"
+echo "| BTC | $btc_price | $week_change_btc | $month_change_btc | $year_change_btc |"
+
