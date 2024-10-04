@@ -11,26 +11,25 @@ COINGECKO_QUERY='?localization=false&tickers=false&market_data=true&community_da
 
 # Function to query best street price source
 get_street_price() {
-	#TODO: More sources!
 	# Haveno.Markets
-	xidel https://haveno.markets/ --xpath "//span[@class='price']" | head -n1
-	# Monero.boats
-	#curl --silent --header 'Accept: application/json' 'https://monero.boats/prices'
+	haveno_streetprice=$(xidel https://haveno.markets/ --xpath "//span[@class='price']" | head -n1)
+	# Monero.boats (RIP)
+	#boats_streetprice=$(curl --silent --header 'Accept: application/json' 'https://monero.boats/prices' | jq -r '.haveno.USD')
+	# Bisq TODO
+	#	bisq_streetprice=$()
+	printf '%s\n' "${haveno_streetprice}"
 }
 
-# Fetch API data in parallel like a BAMF
-{
-	streetprice_data="$(get_street_price)" & \
-	market_data=$(curl --silent --header 'Accept: application/json' \
-		"${COINGECKO_ENDPOINT}${COINGECKO_QUERY}" | jq '.market_data')
-}
+# Fetch CoinGecko data
+market_data=$(curl --silent --header 'Accept: application/json' \
+	"${COINGECKO_ENDPOINT}${COINGECKO_QUERY}" | jq '.market_data')
 
 # Extract the relevant data using jq
 usd_price=$(echo $market_data | jq -r '.current_price.usd')
 eur_price=$(echo $market_data | jq -r '.current_price.eur')
 btc_price=$(echo $market_data | jq -r '.current_price.btc')
 market_cap=$(echo $market_data | jq -r '.market_cap.usd' | xargs numfmt --g)
-street_price="$(echo $streetprice_data | jq -r '.haveno.USD')"
+street_price="$(get_street_price)"
 week_change_usd=$(echo $market_data | jq -r '.price_change_percentage_7d_in_currency.usd')
 month_change_usd=$(echo $market_data | jq -r '.price_change_percentage_30d_in_currency.usd')
 year_change_usd=$(echo $market_data | jq -r '.price_change_percentage_1y_in_currency.usd')
