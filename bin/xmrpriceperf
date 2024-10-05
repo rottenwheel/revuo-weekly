@@ -1,61 +1,54 @@
 #!/bin/bash
+# xmrpriceperf
+
 
 # Get the current date
 current_date=$(date +"%m/%d/%y")
 
-# Set the API endpoint and the coin ID
-API_ENDPOINT="https://api.coingecko.com/api/v3/coins/monero"
-QUERY_PARAMS="?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false&sparkline=false"
+# Set the CoinGecko API endpoint and the coin ID
+COINGECKO_ENDPOINT='https://api.coingecko.com/api/v3/coins/monero'
+COINGECKO_QUERY='?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false&sparkline=false'
 
-# Fetch the data from the API
-response=$(curl -s --request GET \
-     --url "$API_ENDPOINT$QUERY_PARAMS" \
-     --header 'accept: application/json')
-
-# Extract the relevant data using jq
-usd_price=$(echo $response | jq -r '.market_data.current_price.usd' | awk '{printf("$%s\n", $1)}')
-eur_price=$(echo $response | jq -r '.market_data.current_price.eur' | awk '{printf("€%s\n", $1)}')
-btc_price=$(echo $response | jq -r '.market_data.current_price.btc' | awk '{printf("₿%s\n", $1)}')
-market_cap=$(echo $response | jq -r '.market_data.market_cap.usd' | xargs numfmt --g)
-street_price="$(curl -s --header 'accept: application/json' 'https://monero.boats/prices' \
-	| jq -r '.haveno.USD' | awk '{printf("$%.2f\n", $1)}')"
-week_change_usd=$(echo $response | jq -r '.market_data.price_change_percentage_7d_in_currency.usd' | awk '{printf("%.2f", $1)}')
-month_change_usd=$(echo $response | jq -r '.market_data.price_change_percentage_30d_in_currency.usd' | awk '{printf("%.2f", $1)}')
-year_change_usd=$(echo $response | jq -r '.market_data.price_change_percentage_1y_in_currency.usd' | awk '{printf("%.2f", $1)}')
-week_change_eur=$(echo $response | jq -r '.market_data.price_change_percentage_7d_in_currency.eur' | awk '{printf("%.2f", $1)}')
-month_change_eur=$(echo $response | jq -r '.market_data.price_change_percentage_30d_in_currency.eur' | awk '{printf("%.2f", $1)}')
-year_change_eur=$(echo $response | jq -r '.market_data.price_change_percentage_1y_in_currency.eur' | awk '{printf("%.2f", $1)}')
-week_change_btc=$(echo $response | jq -r '.market_data.price_change_percentage_7d_in_currency.btc' | awk '{printf("%.2f", $1)}')
-month_change_btc=$(echo $response | jq -r '.market_data.price_change_percentage_30d_in_currency.btc' | awk '{printf("%.2f", $1)}')
-year_change_btc=$(echo $response | jq -r '.market_data.price_change_percentage_1y_in_currency.btc' | awk '{printf("%.2f", $1)}')
-
-# Function to add + or - prefix based on value
-add_prefix() {
-    if (( $(echo "$1 < 0" | bc -l) )); then
-        echo "$1%"
-    else
-        echo "+$1%"
-    fi
+# Function to query best street price source
+get_street_price() {
+	# Haveno.Markets
+	haveno_streetprice=$(xidel https://haveno.markets/ --xpath "//span[@class='price']" | head -n1)
+	# Monero.boats (RIP)
+	#boats_streetprice=$(curl --silent --header 'Accept: application/json' 'https://monero.boats/prices' | jq -r '.haveno.USD')
+	# Bisq TODO
+	#	bisq_streetprice=$()
+	printf '%s\n' "${haveno_streetprice}"
 }
 
-# Format the price changes with + or - prefix
-week_change_usd=$(add_prefix $week_change_usd)
-month_change_usd=$(add_prefix $month_change_usd)
-year_change_usd=$(add_prefix $year_change_usd)
-week_change_eur=$(add_prefix $week_change_eur)
-month_change_eur=$(add_prefix $month_change_eur)
-year_change_eur=$(add_prefix $year_change_eur)
-week_change_btc=$(add_prefix $week_change_btc)
-month_change_btc=$(add_prefix $month_change_btc)
-year_change_btc=$(add_prefix $year_change_btc)
+# Fetch CoinGecko data
+market_data=$(curl --silent --header 'Accept: application/json' \
+	"${COINGECKO_ENDPOINT}${COINGECKO_QUERY}" | jq '.market_data')
 
-# Print the markdown formatted output
-echo "# Price & Performance"
-echo "**Market Cap:** $market_cap"
-echo "**Street Price:** $street_price"
-echo "| Currency | Price | Week Change | Month Change | Year Change |"
-echo "|----------|-------|-------------|--------------|-------------|"
-echo "| USD | $usd_price | $week_change_usd | $month_change_usd | $year_change_usd |"
-echo "| EUR | $eur_price | $week_change_eur | $month_change_eur | $year_change_eur |"
-echo "| BTC | $btc_price | $week_change_btc | $month_change_btc | $year_change_btc |"
+# Extract the relevant data using jq
+usd_price=$(echo $market_data | jq -r '.current_price.usd')
+eur_price=$(echo $market_data | jq -r '.current_price.eur')
+btc_price=$(echo $market_data | jq -r '.current_price.btc')
+market_cap=$(echo $market_data | jq -r '.market_cap.usd' | xargs numfmt --g)
+street_price="$(get_street_price)"
+week_change_usd=$(echo $market_data | jq -r '.price_change_percentage_7d_in_currency.usd')
+month_change_usd=$(echo $market_data | jq -r '.price_change_percentage_30d_in_currency.usd')
+year_change_usd=$(echo $market_data | jq -r '.price_change_percentage_1y_in_currency.usd')
+week_change_eur=$(echo $market_data | jq -r '.price_change_percentage_7d_in_currency.eur')
+month_change_eur=$(echo $market_data | jq -r '.price_change_percentage_30d_in_currency.eur')
+year_change_eur=$(echo $market_data | jq -r '.price_change_percentage_1y_in_currency.eur')
+week_change_btc=$(echo $market_data | jq -r '.price_change_percentage_7d_in_currency.btc')
+month_change_btc=$(echo $market_data | jq -r '.price_change_percentage_30d_in_currency.btc')
+year_change_btc=$(echo $market_data | jq -r '.price_change_percentage_1y_in_currency.btc')
 
+# Print markdown-formatted output
+printf '# Price & Performance\n'
+printf '**Market Cap:** %s\n' "${market_cap}"
+printf '**Street Price:** %s\n' "${street_price}"
+printf '| Currency | Price | Week Change | Month Change | Year Change |\n'
+printf '|----------|-------|-------------|--------------|-------------|\n'
+printf '| USD | $%0.2f | %+0.2f%% | %+0.2f%% | %+0.2f%% |\n' \
+	"${usd_price}" "${week_change_usd}" "${month_change_usd}" "${year_change_usd}"
+printf '| EUR | €%0.2f | %+0.2f%% | %+0.2f%% | %+0.2f%% |\n' \
+	"${eur_price}" "${week_change_eur}" "${month_change_eur}" "${year_change_eur}"
+printf '| BTC | ₿%f | %+0.2f%% | %+0.2f%% | %+0.2f%% |\n' \
+	"${btc_price}" "${week_change_btc}" "${month_change_btc}" "${year_change_btc}"
