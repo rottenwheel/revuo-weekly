@@ -35,7 +35,7 @@ Mrs. Crypto Tips mentioned Haveno DEX and Serai as promising, future Monero on/o
 {{% /newsbyte %}}
 
 {{% newsbyte %}}
-[Monero Observer Blitz #34](https://monero.observer/monero-observer-blitz-july-2024/) - September 2024.
+[Monero Observer Blitz #34](https://monero.observer/monero-observer-blitz-september-2024/) - September 2024.
 {{% /newsbyte %}}
 
 {{% newsbyte %}}
