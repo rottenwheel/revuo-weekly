@@ -106,7 +106,7 @@ FCMP Animated Explainer Video
 	market_cap="2,800,021,032"
 	street_price="168"
 
-	table_date="06/13/24"
+	table_date="10/13/24"
 	price_usd="151.79,-1.11,-10.6,-0.53"
 	price_eur="138.69,-0.77,-9.49,-4.16"
 	price_btc="0.002414,-2.6,-17.74,-57.59"
