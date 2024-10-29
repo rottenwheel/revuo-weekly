@@ -27,7 +27,7 @@ Monero contributor jeffro256 has published a MRL issue calling for discussion on
 {{% /newsbyte %}}
 
 {{% newsbyte %}}
-Cake v4.20.1 and Monero.com [v1.17.0](https://github.com/cake-tech/cake_wallet/releases/tag/v4.20.0) with LTC mimblewimble support; BIP32 wallet groups; XMR address handling refactor; and many more improvements under the hood.
+Cake [v4.20.1](https://github.com/cake-tech/cake_wallet/releases/tag/v4.20.1) and Monero.com [v1.17.0](https://github.com/cake-tech/cake_wallet/releases/tag/v4.20.0) with LTC mimblewimble support; BIP32 wallet groups; XMR address handling refactor; and many more improvements under the hood.
 {{% /newsbyte %}}
 
 {{% newsbyte %}}
