@@ -70,7 +70,7 @@ Carrot animated video
 
 ### CCS Proposals Need Funding
 
-{{% ccs_item link="https://ccs.getmonero.org/proposals/vThorOfflineSigningLibrary_XmrSignerToProduction.html" author="jeffro256" goal=196 raised=0.49 %}}
+{{% ccs_item link="https://ccs.getmonero.org/proposals/vThorOfflineSigningLibrary_XmrSignerToProduction.html" author="DiosDelRayo" goal=196 raised=0.49 %}}
 Offline Signing Library for XmrSigner to Production
 {{% /ccs_item %}}
 
