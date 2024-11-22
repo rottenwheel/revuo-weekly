@@ -68,14 +68,22 @@ Research Lab Meeting - [#monero-research-lab](irc://irc.libera.chat/#monero-rese
 
 Below you can find some CCS proposal ideas open for discussion.
 
-{{% ccs_item link="jeffro256-full-time-2024Q3" author="jeffro256" %}}
-full-time development 2024Q3
+{{% ccs_item link="https://repo.getmonero.org/monero-project/ccs-proposals/-/merge_requests/517" author="v1docq47" %}}
+monerotopia 2024 voiceovers and working on xmr.ru
+{{% /ccs_item %}}
+
+{{% ccs_item link="https://repo.getmonero.org/monero-project/ccs-proposals/-/merge_requests/516" author="gingeropolous" %}}
+1TB MRC upgrade 
+{{% /ccs_item %}}
+
+{{% ccs_item link="https://repo.getmonero.org/monero-project/ccs-proposals/-/merge_requests/506" author="SimplifiedPrivacy" last=1 %}}
+Carrot animated video
 {{% /ccs_item %}}
 
 ### CCS Proposals Need Funding
 
-{{% ccs_item link="jeffro256-full-time-2024Q3" author="jeffro256" goal=146 raised=30.04 %}}
-full-time development 2024Q3
+{{% ccs_item link="https://ccs.getmonero.org/proposals/monero-serai-wallet-audit.html" author="kayabaNerve" goal=1050 raised=0.8 %}}
+Audit monero-serai and monero-wallet
 {{% /ccs_item %}}
 
 ### Price & Blockchain Stats {#stats}
@@ -83,13 +91,13 @@ full-time development 2024Q3
 ###### Blockchain Stats
 
 {{< bc_stats
-	height="0"
-	hashrate="0 GH/s"
-	txs_per_block="0"
-	avg_txs_per_day="0"
+	height="3287218"
+	hashrate="3.16 GH/s"
+	txs_per_block="39.18"
+	avg_txs_per_day="28637"
 	block_reward="0.6"
 
-	date="January 1, 2024"
+	date="November 22, 2024"
 >}}
 
 ###### XMR Blocks Distribution in last 1000 blocks
@@ -99,15 +107,15 @@ full-time development 2024Q3
 ###### Price & Performance
 
 {{< price_performance
-	market_cap="3,209,863,981"
-	street_price="190.07"
+	market_cap="2,928,975,601"
+	street_price="164.19"
 
-	table_date="06/13/24"
-	price_usd="173.67,+5.4,+29.9,+24.7"
-	price_eur="160.61,+6.8,+30.9,+25.4"
-	price_btc="0.00258,+12.4,+19.8,-51.9"
+	table_date="11/22/24"
+	price_usd="158.74,+11.60,+2.00,-2.53"
+	price_eur="152.41,+12.77,+5.60,+1.89"
+	price_btc="0.001602,+2.79,-31.46,-63.05"
 
-	date="June 6, 2024"
+	date="November 22, 2024"
 >}}
 
 ###### XMR Price Graph
