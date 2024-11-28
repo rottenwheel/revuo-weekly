@@ -19,7 +19,7 @@ title: "Issue 219: November 21 - 28, 2024"
 ### Recent News {#news}
 
 {{% newsbyte %}}
-Public remote nodes aggregator and monitor [xmr.ditatompel.com](https://xmr.ditatompel.com/) has implemented a slew of important changes to source code, such as: changing license from GLWTS to BSD-3-Clause, hoping to make it more accesible for others to use it and contribute to development; front-end layout improvements; support for IPv6 and I2P monitoring of remote nodes; and a hidden service for the web UI. GitHub [repository]; [.onion](http://xmrlist2ug5ypisuhsvsi2req4bc3uiv3nc24yzibbaztslqprchvcad.onion/) hidden service.
+Public remote nodes aggregator and monitor [xmr.ditatompel.com](https://xmr.ditatompel.com/) has implemented a slew of important changes to source code, such as: changing license from GLWTS to BSD-3-Clause, hoping to make it more accesible for others to use it and contribute to development; front-end layout improvements; support for IPv6 and I2P monitoring of remote nodes; and a hidden service for the web UI. GitHub [repository](https://github.com/ditatompel/xmr-remote-nodes); [.onion](http://xmrlist2ug5ypisuhsvsi2req4bc3uiv3nc24yzibbaztslqprchvcad.onion/) hidden service.
 {{% /newsbyte %}}
 
 {{% newsbyte %}}
