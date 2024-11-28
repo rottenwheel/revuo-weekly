@@ -70,11 +70,11 @@ Carrot animated video
 
 ### CCS Proposals Need Funding
 
-{{% ccs_item link="https://ccs.getmonero.org/proposals/monero-serai-wallet-audit.html" goal=1050 raised=752.67 %}}
+{{% ccs_item link="https://ccs.getmonero.org/proposals/monero-serai-wallet-audit.html" author="kayabaNerve" goal=1050 raised=752.67 %}}
 Audit monero-serai and monero-wallet
 {{% /ccs_item %}}
 
-{{% ccs_item link="https://ccs.getmonero.org/proposals/gingeropolous_1TB_MRC.html" goal=20 raised=0.86 %}}
+{{% ccs_item link="https://ccs.getmonero.org/proposals/gingeropolous_1TB_MRC.html" author="gingeropolous" goal=20 raised=0.86 %}}
 1TB MRC upgrade
 {{% /ccs_item %}}
 
