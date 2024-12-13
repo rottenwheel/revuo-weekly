@@ -87,10 +87,10 @@ monerotopia 2024 voiceovers and working on xmr.ru
 ###### Blockchain Stats
 
 {{< bc_stats
-	height="0"
-	hashrate="0 GH/s"
-	txs_per_block="0"
-	avg_txs_per_day="0"
+	height="3302075"
+	hashrate="3.19 GH/s"
+	txs_per_block="39.60"
+	avg_txs_per_day="28785"
 	block_reward="0.6"
 
 	date="December 12, 2024"
