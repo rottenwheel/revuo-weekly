@@ -23,7 +23,7 @@ Gupaxx [v1.6.0](https://github.com/Cyrix126/gupaxx/releases/tag/v1.6.0) with a s
 {{% /newsbyte %}}
 
 {{% newsbyte %}}
-Cake v4.22.0 and Monero.com v1.19.0 [released](https://github.com/cake-tech/cake_wallet/releases/tag/v4.22.0) with full Monero Ledge support; mnemonic seed verification; and tap-to-hide balance UI feature. Reddit [thread](https://redlib.zaggy.nl/r/Monero/comments/1hi2734/cake_wallet_v4220_maximize_monero_security_with/).
+Cake v4.22.0 and Monero.com v1.19.0 [released](https://github.com/cake-tech/cake_wallet/releases/tag/v4.22.0) with full Monero Ledger support; mnemonic seed verification; and tap-to-hide balance UI feature. Reddit [thread](https://redlib.zaggy.nl/r/Monero/comments/1hi2734/cake_wallet_v4220_maximize_monero_security_with/).
 {{% /newsbyte %}}
 
 {{% newsbyte %}}
