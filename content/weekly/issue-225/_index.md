@@ -27,7 +27,7 @@ Cake v4.23.0 and Monero.com v1.20.0 [released](https://github.com/cake-tech/cake
 {{% /newsbyte %}}
 
 {{% newsbyte %}}
-Monero v0.18.4.0 point release coming soon^(tm). selsta's pull [request](https://github.com/monero-project/monero/issues/9758), outlining a short ToDo list before then.
+Monero v0.18.4.0 point release coming soon^(tm). selsta's [issue](https://github.com/monero-project/monero/issues/9758), outlining a short ToDo list with pull requests to be merged before then.
 {{% /newsbyte %}}
 
 {{% newsbyte %}}
