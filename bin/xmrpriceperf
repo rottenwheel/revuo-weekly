@@ -8,16 +8,20 @@ current_date=$(date +"%m/%d/%y")
 # Set the CoinGecko API endpoint and the coin ID
 COINGECKO_ENDPOINT='https://api.coingecko.com/api/v3/coins/monero'
 COINGECKO_QUERY='?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false&sparkline=false'
+HAVENO_MARKETS_ENDPOINT='https://haveno.markets/api/v1/tickers'
 
 # Function to query best street price source
 get_street_price() {
 	# Haveno.Markets
-	haveno_streetprice=$(xidel https://haveno.markets/ --xpath "//span[@class='price']" | head -n1)
+	haveno_markets_streetprice="$(curl --silent --header 'Accept: application/json' \
+		"${HAVENO_MARKETS_ENDPOINT}" | jq -r '.USD.last_price')"
 	# Monero.boats (RIP)
 	#boats_streetprice=$(curl --silent --header 'Accept: application/json' 'https://monero.boats/prices' | jq -r '.haveno.USD')
-	# Bisq TODO
-	#	bisq_streetprice=$()
-	printf '%s\n' "${haveno_streetprice}"
+	# OpenMonero.com (WIP)
+	#openmonero_streetprice=$()
+	# Bisq (WIP)
+	#bisq_streetprice=$()
+	printf '%s\n' "${haveno_markets_streetprice}"
 }
 
 # Fetch CoinGecko data
@@ -29,7 +33,6 @@ usd_price=$(echo $market_data | jq -r '.current_price.usd')
 eur_price=$(echo $market_data | jq -r '.current_price.eur')
 btc_price=$(echo $market_data | jq -r '.current_price.btc')
 market_cap=$(echo $market_data | jq -r '.market_cap.usd' | xargs numfmt --g)
-street_price="$(get_street_price)"
 week_change_usd=$(echo $market_data | jq -r '.price_change_percentage_7d_in_currency.usd')
 month_change_usd=$(echo $market_data | jq -r '.price_change_percentage_30d_in_currency.usd')
 year_change_usd=$(echo $market_data | jq -r '.price_change_percentage_1y_in_currency.usd')
@@ -42,8 +45,8 @@ year_change_btc=$(echo $market_data | jq -r '.price_change_percentage_1y_in_curr
 
 # Print markdown-formatted output
 printf '# Price & Performance\n'
-printf '**Market Cap:** %s\n' "${market_cap}"
-printf '**Street Price:** %s\n' "${street_price}"
+printf '**Market Cap:** $%s\n' "${market_cap}"
+printf '**Street Price:** $%0.2f\n' "$(get_street_price)"
 printf '| Currency | Price | Week Change | Month Change | Year Change |\n'
 printf '|----------|-------|-------------|--------------|-------------|\n'
 printf '| USD | $%0.2f | %+0.2f%% | %+0.2f%% | %+0.2f%% |\n' \
