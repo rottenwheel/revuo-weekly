@@ -10,6 +10,7 @@ Revuo Monero is an audience-funded newsletter: domain & hosting expenses are cov
 
 - **Kuno fundraiser**: none active at the moment.  
 - **XMRChat**: [xmrchat.com/revuo](https://xmrchat.com/revuo).  
-- **.xmr Unstoppable Domains**: *revuo.xmr* **Note**: Compatible wallet(s): Cake Wallet.
+- **.xmr Unstoppable Domains**: *revuo.xmr*.  
+**Note**: Compatible wallet(s): Cake Wallet.
 
 No paywalls. No ads. No analytics.
