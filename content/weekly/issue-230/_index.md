@@ -23,7 +23,7 @@ Cake v4.23.3 and Monero.com v1.20.3 [Beta] [released](https://github.com/cake-te
 {{% /newsbyte %}}
 
 {{% newsbyte %}}
-monerod-GUI [v1.2.0](https://github.com/everoddandeven/monerod-gui/releases/tag/v1.2.0-1) with Tor and I2P service; UI fiex and improvements; and upgrade of dependencies.
+monerod-GUI [v1.2.0](https://github.com/everoddandeven/monerod-gui/releases/tag/v1.2.0-1) with Tor and I2P service; UI fixes and improvements; and upgrade of dependencies.
 {{% /newsbyte %}}
 
 {{% newsbyte %}}
