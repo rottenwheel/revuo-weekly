@@ -71,10 +71,18 @@ def create_issue(
     lines = content.split("\n")
 
     period_string = get_period_string(period_start, period_end, True)
+    meeting_placeholder = f"{period_start.strftime("%B")} [day], {period_start.year}"
+    data_placeholder = period_end.strftime("%B %-d, %Y")
 
     for i, line in enumerate(lines):
         if line.startswith("title:"):
             lines[i] = f'title: "Issue {issue_number}: {period_string}"'
+        elif line.startswith("{{% event"): # replace date in event shortcode
+            lines[i] = line.replace("July 1, 2024", meeting_placeholder)
+        elif 'date="January 1, 2024"' in line: #replace date in bc_stats shortcode
+            lines[i] = line.replace("January 1, 2024", data_placeholder)
+        elif 'date="June 6, 2024"' in line: #replace date in price_performance shortcode
+            lines[i] = line.replace("June 6, 2024", data_placeholder)
 
     content = "\n".join(lines)
 
