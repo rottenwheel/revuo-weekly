@@ -86,7 +86,7 @@ Haveno App (Cross Platform)
 jeffro256 full-time development 2025Q2
 {{% /ccs_item %}}
 
-{{% ccs_item link="https://ccs.getmonero.org/proposals/spirobel_monero_browser_wallet.html" author="jeffro256" goal=335 raised=0 %}}
+{{% ccs_item link="https://ccs.getmonero.org/proposals/spirobel_monero_browser_wallet.html" author="spirobel" goal=335 raised=0 %}}
 Monero Browser Wallet
 {{% /ccs_item %}}
 
