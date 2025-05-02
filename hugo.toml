@@ -41,7 +41,8 @@ bottom_nav_icons = [
 	{ title = "XMPP MUC", link = "xmpp:revuo-monero@conference.jabbers.one?join", icon = "xmpp.png", icon_alt = "XMPP MUC" },
 	{ title = "Matrix Room", link = "https://matrix.to/#/#revuo:monero.social", icon = "matrix.png", icon_alt = "Matrix Room" },
 	{ title = "SimpleX Group", link = "https://simplex.chat/contact#/?v=2-5&smp=smp%3A%2F%2FPQUV2eL0t7OStZOoAsPEV2QYWt4-xilbakvGUGOItUo%3D%40smp6.simplex.im%2FFdX47r8M_nGmRC9jDODlW2idjcU7S827%23%2F%3Fv%3D1-2%26dh%3DMCowBQYDK2VuAyEASXUc7nr69PVJo4E7ub-F4-xHWeYy2bms-2-tl05e7Ak%253D%26srv%3Dbylepyau3ty4czmn77q4fglvperknl4bi2eb2fdy2bh4jxtf32kf73yd.onion&data=%7B%22type%22%3A%22group%22%2C%22groupLinkId%22%3A%22nTyju82ZTeLaAbphcYVc8A%3D%3D%22%7D", icon = "simplex.png", icon_alt = "SimpleX Group" },
-	{ title = "IRC Room", link = "irc://irc.libera.chat/#revuo-xmr", icon = "irc.png", icon_alt = "IRC Room" },
+	{ title = "Threema", link = "https://threema.id/Y99DFWMR", icon = "threema.png", icon_alt = "Threema" },
+	{ title = "IRC Room", link = "irc://irc.libera.chat/#revuo-xmr", icon = "irc.png", icon_alt = "IRC Room" }
 ]
 
 [params.author]
