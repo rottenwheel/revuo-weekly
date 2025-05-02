@@ -27,7 +27,9 @@ nav_links = [
 
 right_icons = [
 	{ title = "Support", link = "/support", external = false, icon = "donate.png", icon_alt = "Donate" },
-	{ title = "ATOM Feed", link = "/index.xml", external = true, icon = "rss_1.png", icon_alt = "ATOM Feed" },
+	{ title = "ATOM Feed", link = "/index.xml", external = false, icon = "rss_1.png", icon_alt = "ATOM Feed" },
+	{ title = "Charts", link = "https://moneroj.net/", external = true, icon = "charts.png", icon_alt = "Charts" },
+	{ title = "Calculator", link = "https://calc.revuo-xmr.com/", external = true, icon = "calculator.png", icon_alt = "Calculator" },
 ]
 
 mirrors = [
