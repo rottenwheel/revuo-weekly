@@ -66,7 +66,7 @@ Haveno App (Cross Platform)
 
 ### CCS Proposals Need Funding
 
-{{% ccs_item link="jeffro256-full-time-2024Q3" author="Deverickapollo & Napoly" goal=273 raised=40.47 %}}
+{{% ccs_item link="https://ccs.getmonero.org/proposals/btcpayserver-plugin.html" author="Deverickapollo & Napoly" goal=273 raised=40.47 %}}
 BTCPay Server Monero Plugin
 {{% /ccs_item %}}
 
