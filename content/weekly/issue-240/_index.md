@@ -50,6 +50,14 @@ RetoSwap reached $50M volume, more than 1k trades in the month of May and is run
 **[!!]** *New service, tread with caution!* Another week, another KYC-free Monero gambling site surfaces, meet [webetxmr.com](https://webetxmr.com/).
 {{% /newsbyte %}}
 
+{{% newsbyte %}}
+gnuteardrops is looking for some XMR to keep crafting images until January 2027. goal: 60 XMR. Visit [monero.graphics](https://monero.graphics/) and check the archive if you haven't, feel free to send some XMR their way if you like what you see. They have contributed graphic design labor to Revuo Monero in the past! Find out more in their `About` [section](https://monero.graphics/about).
+{{% /newsbyte %}}
+
+{{% newsbyte %}}
+[Monero Observer Blitz #42](https://monero.observer/monero-observer-blitz-may-2025/) - May 2025.
+{{% /newsbyte %}}
+
 ### Upcoming Events {#events}
 
 {{% event "June 2, 2025 (Monday) - 18:00 UTC" %}}
