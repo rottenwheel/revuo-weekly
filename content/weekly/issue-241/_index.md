@@ -95,7 +95,7 @@ Monero Browser Wallet
 {{% /ccs_item %}}
 
 {{% ccs_item link="https://ccs.getmonero.org/proposals/selsta-17p.html" author="selsta" goal=66 raised=35.66 %}}
-part-time monero development (3 months) (17)
+Part-time monero development (3 months) (17)
 {{% /ccs_item %}}
 
 ### Price & Blockchain Stats {#stats}
