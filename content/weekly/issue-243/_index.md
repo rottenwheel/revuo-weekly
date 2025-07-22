@@ -36,6 +36,10 @@ Monero Talk chatted with philosopher and engineer, Deki Zedd. They talk about th
 Research Lab Meeting - [#monero-research-lab](irc://irc.libera.chat/#monero-research-lab) IRC channel; Matrix [room](https://matrix.to/#/#monero-research-lab:monero.social).
 {{% /event %}}
 
+{{% event "July 12, 2024 (Saturday) - 16:00 UTC" %}}
+Community Workgroup Meeting - [#monero-community](irc://irc.libera.chat/#monero-community) IRC channel; Matrix [room](https://matrix.to/#/#monero-community:monero.social).
+{{% /event %}}
+
 ### CCS Proposal Ideas {#proposals}
 
 Below you can find some CCS proposal ideas open for discussion.
