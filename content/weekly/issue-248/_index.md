@@ -43,6 +43,10 @@ RetoSwap [v1.2.2](https://github.com/retoaccess1/haveno-reto/releases/tag/1.2.2-
 {{% /newsbyte %}}
 
 {{% newsbyte %}}
+Monfluo Wallet [v0.9.0](https://codeberg.org/acx/monfluo/releases/tag/0.9.0) with a brand-new UI/UX redesign that looks slick! F-Droid [repository](https://fdroid.monfluo.org/fdroid/repo/).
+{{% /newsbyte %}}
+
+{{% newsbyte %}}
 Serai DEX [published](https://serai.exchange/2025/09/26/dkg-evrf-security-proofs.html) the security proofs of their robust one-round, robust threshold DKG.
 {{% /newsbyte %}}
 
