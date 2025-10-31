@@ -14,3 +14,8 @@ Revuo Monero is an audience-funded newsletter: domain & hosting expenses are cov
 **Note**: Compatible wallet(s): Cake Wallet.
 
 No CCS. No paywalls. No ads. No analytics. Ever.
+
+**Note**: 
+
+- Q4 2025 closing [comment](https://repo.getmonero.org/monero-project/ccs-proposals/-/merge_requests/610#note_32451);
+- Revuo CCS [termination](https://gist.github.com/rottenwheel/5ed5f7780531d6bbab69782f7c664d01).
