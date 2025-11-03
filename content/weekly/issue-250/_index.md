@@ -47,7 +47,7 @@ MoneroKon has released jeffro256's MoneroKon 5 talk: _Planned and speculative bl
 {{% /newsbyte %}}
 
 {{% newsbyte %}}
-MoneroKon has released jeffro256's MoneroKon 5 talk: _Planned and speculative block changes in Monero_. X [announcement](https://xcancel.com/MoneroKon/status/1983576553033224588); [Audio/video](https://inv.nadeko.net/watch?v=Khr3Jo4CrcM).
+Monero Talk brought the Stack Wallet team on: CEO Diego Salazar, Brandon A.K.A. _Surae_ Godell, and Luke to deliberate on FCMP++ vs. ZCash privacy-related features the thing everyone seems to be talking about given certain momentum... _Zcash vs. Monero_. Check it out: [Video](https://inv.nadeko.net/watch?v=qQXhT98-bYc); [Audio](https://www.monerotalk.live/monerotalk-366). 
 {{% /newsbyte %}}
 
 ### Upcoming Events {#events}
