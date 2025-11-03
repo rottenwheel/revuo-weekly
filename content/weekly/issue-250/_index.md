@@ -101,8 +101,8 @@ Full time work on Cuprate (3 months)
 {{< bc_stats
 	height="3516464"
 	hashrate="4.18 GH/s"
-	txs_per_block="LocalMonero's Block Explorer [stats](https://localmonero.co/blocks/stats) blank values."
-	avg_txs_per_day="LocalMonero's Block Explorer [stats](https://localmonero.co/blocks/stats) blank values."
+	txs_per_block="N/A"
+	avg_txs_per_day="N/A"
 	block_reward="0.6"
 
 	date="November 3, 2025"
