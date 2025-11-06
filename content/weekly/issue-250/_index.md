@@ -68,7 +68,7 @@ Research Lab Meeting - [#monero-research-lab](irc://irc.libera.chat/#monero-rese
 MoneroKon 6 {TBD} Meeting - [#monerokon](irc://irc.libera.chat/#monerokon) IRC channel; Matrix [room](https://matrix.to/#/#monerokon:matrix.org).
 {{% /event %}}
 
-{{% event "November 8, 2025 (Saturday) - 17:00 UTC" %}}
+{{% event "November 8, 2025 (Saturday) - 16:00 UTC" %}}
 Community Workgroup Meeting - [#monero-community](irc://irc.libera.chat/#monero-community) IRC channel; Matrix [room](https://matrix.to/#/#monero-community:monero.social).
 {{% /event %}}
 
