@@ -19,7 +19,7 @@ title: "Issue 251: November 3 - 25, 2025"
 ### Recent News {#news}
 
 {{% newsbyte %}}
-Monero 0.18.3.4 'Fluorine Fermi' Point Release binaries have been released. [CLI](https://www.getmonero.org/2025/11/14/monero-0.18.4.4-released.html); [GUI](https://www.getmonero.org/2025/11/14/monero-0.18.4.4-released.html)). Remember to verify hashes; how-to guides at the bottom of each blog post. As well, you may compile Monero from [source](https://github.com/monero-project/monero#compiling-monero-from-source).
+Monero 0.18.4.4 'Fluorine Fermi' Point Release binaries have been released. [CLI](https://www.getmonero.org/2025/11/14/monero-0.18.4.4-released.html); [GUI](https://www.getmonero.org/2025/11/14/monero-0.18.4.4-released.html)). Remember to verify hashes; how-to guides at the bottom of each blog post. As well, you may compile Monero from [source](https://github.com/monero-project/monero#compiling-monero-from-source).
 {{% /newsbyte %}}
 
 {{% newsbyte %}}
