@@ -39,7 +39,7 @@ DataHoarder put up a new site: https://blocks.p2pool.observer/payments. It will 
 {{% /newsbyte %}}
 
 {{% newsbyte %}}
-Monero community member, lemineurfou, launched a brand-new mining pool. "I just finalized the configuration of a new XMR pool hosted in Europe (to optimize the ping). The objective is to help a bit with decentralization in the face of giants. I’m looking for some cool miners to test the stability with me (0% fee at the moment). [EuroXMR.eu](http://euroxmr.eu/).
+Monero community member, lemineurfou, launched a brand-new mining pool. "I just finalized the configuration of a new XMR pool hosted in Europe (to optimize the ping). The objective is to help a bit with decentralization in the face of giants. I’m looking for some cool miners to test the stability with me (0% fee at the moment)." [EuroXMR.eu](http://euroxmr.eu/). To foster new joins, it has added a _hashrate lottery_. The concept: 1 Valid Share = 1 Ticket. Every week, a miner wins a small XMR prize, even if the pool hasn't found a block yet.
 {{% /newsbyte %}}
 
 {{% newsbyte %}}
@@ -70,6 +70,10 @@ Monero Talk pushed three (3) new episodes out, with: Joel Valenzuela with what's
 
 {{% event "December 17, 2025 (Wednesday) - 18:00 UTC" %}}
 Research Lab Meeting - [#monero-research-lab](irc://irc.libera.chat/#monero-research-lab) IRC channel; Matrix [room](https://matrix.to/#/#monero-research-lab:monero.social).
+{{% /event %}}
+
+{{% event "December 20, 2025 (Saturday) - 16:00 UTC" %}}
+Community Workgroup Meeting - [#monero-community](irc://irc.libera.chat/#monero-community) IRC channel; Matrix [room](https://matrix.to/#/#monero-community:monero.social).
 {{% /event %}}
 
 {{% event "December 22, 2025 (Monday) - 18:00 UTC" %}}
