@@ -35,7 +35,7 @@ P2Pool [v4.14](https://github.com/SChernykh/p2pool/releases/tag/v4.14).
 {{% /newsbyte %}}
 
 {{% newsbyte %}}
-Tevador published a brief breakdown of different Polyseed variants across the ecosystem, supposedly Cake Wallet is the one that supports most if not all scenarios. Take a [peek](https://github.com/tevador/polyseed/issues/13#issuecomment-3980281619).
+rbrunner7 published a brief breakdown of different Polyseed variants across the ecosystem, supposedly Cake Wallet is the one that supports most if not all scenarios. Take a [peek](https://github.com/tevador/polyseed/issues/13#issuecomment-3980281619).
 {{% /newsbyte %}}
 
 {{% newsbyte %}}
