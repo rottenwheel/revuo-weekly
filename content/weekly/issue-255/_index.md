@@ -82,8 +82,8 @@ Monero.eco 2025-2026 compensation
 Full-time development 2026Q1
 {{% /ccs_item %}}
 
-{{% ccs_item link="https://ccs.getmonero.org/proposals/boog_3_months_cuprate_5.html" author="jeffro256" goal=108 raised=11.13 %}}
-Boog900 Cuprate RPC for wallet support (Rust Monero node)
+{{% ccs_item link="https://ccs.getmonero.org/proposals/boog_3_months_cuprate_5.html" author="Boog900" goal=108 raised=11.13 %}}
+Cuprate RPC for wallet support (Rust Monero node)
 {{% /ccs_item %}}
 
 {{% ccs_item link="https://ccs.getmonero.org/proposals/boog_3_months_cuprate_5.html" author="plowsof" goal=66.6 raised=1.33 more=1 %}}
