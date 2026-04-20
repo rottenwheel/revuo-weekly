@@ -39,7 +39,7 @@ Monero Community Member WebWipe is hosting yet another privacy meetup, this time
 {{% /newsbyte %}}
 
 {{% newsbyte %}}
-**Community Project Highlights**: Monero SuperPay, Monero SuperBrain... they've got a flashy brand-new website and MacOS downloads available now! Have a peek over at [monerosuperay.com](https://monerosuperpay.com/); X [thread](https://xcancel.com/MgkMshrmBrkfst/status/2042541020689371197).
+**Community Project Highlights**: Monero SuperPay, Monero SuperBrain... they've got a flashy brand-new website and MacOS downloads available now! Have a peek over at [monerosuperpay.com](https://monerosuperpay.com/); X [thread](https://xcancel.com/MgkMshrmBrkfst/status/2042541020689371197).
 {{% /newsbyte %}}
 
 {{% newsbyte %}}
