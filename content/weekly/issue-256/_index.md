@@ -67,7 +67,7 @@ All MoneroKon 5 talks have been uploaded and are available in the Monero Communi
 {{% /newsbyte %}}
 
 {{% newsbyte %}}
-**[!!]** *New service, tread with caution!* XMRMatters: peer-to-peer exchange platform, with escrow and all that jazz. Monero.forum [thread](https://monero.forum/thread/platform-xmrmatters-p2p-exchange-15-days-mainnet-architecture-overview); registration is open over at [xmrmatters.space](https://xmrmatters.space/)!
+**Community Project Highlights**: Monero Hub: the Hub of all things Monero (XMR). Swapping, Directory, Blog, Shop, Memes, Community, Learning & More - [XMRHub.org](https://xmrhub.org/). Monero Map: find local Monero-accepting businesses | XMR stickers in the wild | People to buy & sell XMR from, locally - [XMRMap.org](https://xmrmap.org/).
 {{% /newsbyte %}}
 
 {{% newsbyte %}}
