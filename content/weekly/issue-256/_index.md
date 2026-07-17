@@ -85,7 +85,7 @@ Monero Talk had a conversation with DHC; Christopher Cialone; and John Woods. Fi
 ### Upcoming Events {#events}
 
 {{% event "July 20, 2026 (Monday) - 18:00 UTC" %}}
-Seraphis Wallet Workgroup Meeting - [#no-wallet-left-behind](irc://irc.libera.chat/#no-wallet-left-behind) IRC channel; Matrix [room](https://matrix.to/#/#no-wallet-left-behind:monero.social).
+Monero Tech Meeting - [#no-wallet-left-behind](irc://irc.libera.chat/#no-wallet-left-behind) IRC channel; Matrix [room](https://matrix.to/#/#no-wallet-left-behind:monero.social).
 {{% /event %}}
 
 {{% event "July 21, 2026 (Tuesday) - 18:00 UTC" %}}
