@@ -47,11 +47,11 @@ BasicSwap DEX was exploited. "Losses of 0.66 BTC ($42k) confirmed so far," accor
 {{% /newsbyte %}}
 
 {{% newsbyte %}}
-Looks like Kraken is introducing Monero deposit and withdrawal limits in a prelude to a full-out delisting. Deposit: 10.8 XMR per month Withdraw: 4.6 XMR per month. X [thread](https://xcancel.com/xenumonero/status/2076807666731520248); X [thread](https://xcancel.com/ctcheeto/status/2076695423474143292).
+Looks like Kraken is introducing Monero deposit and withdrawal limits in a prelude to a full-out delisting. Deposit: 10.8 XMR per month; Withdraw: 4.6 XMR per month. X [thread](https://xcancel.com/xenumonero/status/2076807666731520248); X [thread](https://xcancel.com/ctcheeto/status/2076695423474143292).
 {{% /newsbyte %}}
 
 {{% newsbyte %}}
-Gingeropolous completed the first milestone for their CCS [proposal](https://ccs.getmonero.org/proposals/gingeropolous-netsim.html). Meet Monerosim [v0.2.0](https://github.com/Fountain5405/monerosim/releases/tag/v0.2.0). GitHub [repository](https://github.com/Fountain5405/monerosim).
+Gingeropolous completed the first milestone of their CCS [proposal](https://ccs.getmonero.org/proposals/gingeropolous-netsim.html): Monero Network Simulation Tool. Meet Monerosim [v0.2.0](https://github.com/Fountain5405/monerosim/releases/tag/v0.2.0). GitHub [repository](https://github.com/Fountain5405/monerosim). Feedback appreciated.
 {{% /newsbyte %}}
 
 {{% newsbyte %}}
