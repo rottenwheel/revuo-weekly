@@ -27,7 +27,7 @@ Serai DEX keeps progressing steadily. Their node implementation received a secur
 {{% /newsbyte %}}
 
 {{% newsbyte %}}
-Monero Merchant [v2.1](https://github.com/Monero-Merchant/monero-merchant/releases/tag/v2.1) was released, including: Light Wallet Support; new icons; new UI; and more. New [dashboard](https://github.com/Monero-Merchant/monero-merchant/tree/main/backend#vendor-dashboard) too! Oh, yeah, Umbrel [support](https://github.com/Monero-Merchant/monero-merchant/tree/main/umbrel) was added as well. X [thread](https://nitter.privacyredirect.com/monero_merchant/status/2047278364143075545); Umbrel support X [thread](https://nitter.privacyredirect.com/monero_merchant/status/2069640985798176772).
+Monero Merchant [v2.1](https://github.com/Monero-Merchant/monero-merchant/releases/tag/v2.1) was released, including: Light Wallet Support; new icons; new UI; and more. New [dashboard](https://github.com/Monero-Merchant/monero-merchant/tree/main/backend#vendor-dashboard) too! Oh, yeah, Umbrel [support](https://github.com/Monero-Merchant/monero-merchant/tree/main/umbrel) was added as well. X [thread](https://xcancel.com/monero_merchant/status/2047278364143075545); Umbrel support X [thread](https://xcancel.com/monero_merchant/status/2069640985798176772).
 {{% /newsbyte %}}
 
 {{% newsbyte %}}
@@ -75,7 +75,7 @@ All MoneroKon 5 talks have been uploaded and are available in the Monero Communi
 {{% /newsbyte %}}
 
 {{% newsbyte %}}
-Revuo Monero will be maintained on "as best as possible"... _kidding_! Revuo Monero is back in full: for 3 months, or 12 issues (however long the 12 issues take, but ideally, 3 months) we will be with you. Fundraiser reached its set [goal](https://kuno.anne.media/fundraiser/mytv/), and what is promised, is debt. ;-) X [thread](https://nitter.privacyredirect.com/revuo_xmr/status/2076360636607451605).
+Revuo Monero will be maintained on "as best as possible"... _kidding_! Revuo Monero is back in full: for 3 months, or 12 issues (however long the 12 issues take, but ideally, 3 months) we will be with you. Fundraiser reached its set [goal](https://kuno.anne.media/fundraiser/mytv/), and what is promised, is debt. ;-) X [thread](https://xcancel.com/revuo_xmr/status/2076360636607451605).
 {{% /newsbyte %}}
 
 {{% newsbyte %}}
